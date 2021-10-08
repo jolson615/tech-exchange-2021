@@ -1,0 +1,218 @@
+/* CSS for painting 1 */
+
+#painting1 {
+    height: 710px;
+    width: 680px;
+    box-sizing: content-box;
+    display: grid;
+    grid-template-columns: 300px 300px 50px;
+    grid-template-rows: 350px 150px 180px;
+    grid-gap: 15px;
+    border: black 15px solid;
+    background-color: black;
+}
+
+
+#painting1 div#primary {
+    background-color: #D51A1C;
+}
+
+#painting1 div.blank {
+    background-color: #E5E1DC;
+}
+
+#painting1 div#double {
+    grid-column: span 2;
+}
+
+#painting1 div.tall {
+    grid-row: span 2;
+}
+
+#painting1 div.heavy {
+    border-bottom: black 30px solid;
+}
+
+#painting1 div.small {
+    background-color: #E5E1DC;
+}
+
+#painting1 div.small#navy {
+    background-color: #004696;
+}
+
+
+/* CSS for painting 2 */
+
+#painting2 {
+    box-sizing: border-box;
+    width: 800px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#painting2 div {
+    border: black 15px solid;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#painting2 div.left-col {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+
+#painting2 div.left-col div.pale {
+    background-color: #E5E1DC;
+    min-height: 250px;
+}
+
+#painting2 div#giant.rosy {
+    background-color: #D51A1C;
+    flex-grow: 1;
+}
+
+#painting2 div#bottom-row {
+    height: 230px;
+    width: 800px;
+    display: flex;
+    flex-direction: row;
+}
+
+#painting2 div#bottom-row div.powerful {
+    height: 200px;
+    width: 250px;
+    background-color: #004696;
+}
+
+#painting2 div#bottom-row div#wider {
+    height: 200px;
+    width: 400px;
+    background-color: #E5E1DC;
+}
+
+#painting2 div#bottom-row div#right-col {
+    background-color: #E5E1DC;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+#painting2 div#bottom-row div#right-col div {
+    flex-grow: 1;
+}
+
+
+#painting2 div#bottom-row div#the-yellow-one {
+    flex-grow: 1;
+    background-color: yellow;
+}
+
+/* CSS for painting 3 */
+
+#painting3 {
+    width: 570px;
+    box-sizing: content-box;
+    display: grid;
+    grid-template-columns: 50px 70px 70px 30px 150px 80px 60px;
+    grid-template-rows: 60px 110px 110px 70px 50px 70px 20px 45px;
+    grid-gap: 10px;
+    /* border: black 15px solid; */
+    background-color: black;
+}
+
+#painting3 div {
+    background-color: #E5E1DC;
+}
+
+#painting3 div.wide {
+    grid-column: span 2;
+    background-color: #E5E1DC;
+}
+
+
+#painting3 div.giant {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+#painting3 div.tall {
+    grid-row: span 2;
+    background-color: #E5E1DC;
+}
+
+#painting3 div.triple-wide {
+    grid-column: span 3;
+    background-color: #E5E1DC;
+}
+
+#painting3 div.glow {
+    background-color: #E8CF0B;
+}
+
+#painting3 div.rosy {
+    background-color: #D51A1C;
+}
+
+#painting3 div.dark {
+    background-color: black;
+}
+
+#painting3 div.royal {
+    background-color: #004696;
+}
+
+
+#painting3 #biggest-red {
+    grid-column: span 2;
+    grid-row: span 3;
+    background-color: #D51A1C;
+}
+
+/* CSS for painting 4 */
+
+#painting4 {
+    display: flex;
+    flex-direction: column;
+}
+
+#painting4 div.broadway-row {
+    display: grid;
+    grid-template-columns: repeat(45, 20px);
+    width: 700px;
+    height: 20px;
+}
+
+#painting4 div.broadway-row div {
+    background-color: #E5E1DC;
+}
+
+#painting4 div.broadway-row div.double {
+    grid-column: span 2;
+}
+
+#painting4 div.broadway-row div.triple {
+    grid-column: span 3;
+}
+
+#painting4 div.broadway-row div.quad {
+    grid-column: span 4;
+}
+
+#painting4 div.broadway-row div.yellow {
+    background-color: #FCC403;
+}
+
+#painting4 div.broadway-row div.red {
+    background-color: #D51A1C;
+}
+
+#painting4 div.broadway-row div.blue {
+    background-color: #004696;
+}
+
+#painting4 div.broadway-row div.grey {
+    background-color: #c4bcbd;
+}
