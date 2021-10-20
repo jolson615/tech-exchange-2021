@@ -31,7 +31,7 @@ Over the course of this week, students will build a team page in HTML. The prima
 
 Remember that students are coming from all different contexts. Some have been studying CS for years, and some began coding much more recently. The only way for a group of differing experience levels to gel as a team is to lower the stakes. That means making it clear that the purpose of working in a team is collaborative, not competitive. The goal isn't to find out who on each team is the most experienced in a given content area, or to find out which team is the strongest, but rather for the most experienced team member to step into a leadership capacity and immediately make themselves available to help upskill their partners. 
 
-Rather than try to hide this different levels of expertise, embrace them! Be explicit about the fact that some students have spent lots of time with HTML, and others will be seeing it for the first time today, so it wouldn't make sense for you, the instructor, to go over everything. 
+Rather than try to hide these different levels of expertise, embrace them! Be explicit about the fact that some students have spent lots of time with HTML, and others will be seeing it for the first time today, so it wouldn't make sense for you, the instructor, to go over everything. 
 
 Tell them that instead of stepping through all of HTML, you're going to give a high-level introduction to some foundational concepts and then make space for students to get to work. Explain that you expect the more experienced members of each group to step into the mentoring role that senior engineers take. It's their job to make 100% sure that everyone in their group understands the code they're writing. 
 
@@ -41,10 +41,10 @@ This lesson also includes the first lab of the course, and it's intended to be r
 
 ## Objectives
 
-* SWBAT write basic web pages in HTML and open a preview to view those pages.
-* SWBAT add attributes like `class` and `id` to their HTML elements. 
-* SWBAT properly nest HTML elements inside one another. 
-* SWBAT write basic ID and class selectors in CSS, and add `background-color` and `padding` to those elements.
+* SW (students will) write basic web pages in HTML and open a preview to view those pages.
+* SW add attributes like `class` and `id` to their HTML elements. 
+* SW properly nest HTML elements inside one another. 
+* SW write basic ID and class selectors in CSS, and add `background-color` and `padding` to those elements.
 
 ## Setup
 
@@ -72,7 +72,7 @@ Show students the overall trajectory of the three units of this course. Explain 
 
 Name that while everyone likely has different experience levels in HTML, that there's always more to learn, and then direct them to the [NYT Science Website](https://www.nytimes.com/section/science). Demonstrate how to open the inspector in Chrome, and then show the sheer volume of code that has been used to create this site. 
 
-Then, show students how to identify an **element** in the inspector (either by color code, or by the fact that it immediate follows a `<` symbol) and challenge students to a scavenger hunt - find at least 8 different elements in under 2 minutes.
+Then, show students how to identify an **element** in the inspector (either by color code, or by the fact that it immediately follows a `<` symbol) and challenge students to a scavenger hunt - find at least 8 different elements in under 2 minutes.
 
 Have students share their answers aloud or in chat, and then emphasize that almost no one would know how to code all of the elements from scratch. Anytime you're learning something new, you'll spend a lot of time consulting **documentation**, and one of the best places to go for HTML documentation is [w3schools](https://www.w3schools.com/tags/default.asp). 
 
@@ -202,7 +202,7 @@ Let's move on and build the menu. In the same way that the menu is a division on
 #### Helpful Questions
 * Especially if today is your first day with HTML, you may have been surprised that we didn't give `id`s to these divs. We gave them classes instead? Why do you think it would be bad practice to use `id="food"` twice on the same page?
 
-> A helpful analogy here: As a student, you likely have an ID number at your college or university. That's unique! You should be the only one who has that number. But as a student, you're also enrolled in lots of classes, and there are dozens of other students in those classes with you. As a rule of thumb, it's generally better to classes when you want to create a group, and to use IDs when you want to create something one-of-a-kind.
+> A helpful analogy here: As a student, you likely have an ID number at your college or university. That's unique! You should be the only one who has that number. But as a student, you're also enrolled in lots of classes, and there are dozens of other students in those classes with you. As a rule of thumb, it's generally better to use classes when you want to create a group, and to use IDs when you want to create something one-of-a-kind.
 
 Next up, let's add some details to each of our two menu items.
 

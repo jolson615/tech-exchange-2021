@@ -18,13 +18,13 @@
 
 ## Teaching Tips
 
-This is students' first time working at length on anything together, so it is critically important to lower the stakes as much as possible. Emphasize that the point is not to for students to flex their existing coding skills, but rather to meet the core requirements and make sure that everyone on their team feels comfortable with the HTML and CSS basics.
+This is students' first time working at length on anything together, so it is critically important to lower the stakes as much as possible. Emphasize that the point is not for students to flex their existing coding skills, but rather to meet the core requirements and make sure that everyone on their team feels comfortable with the HTML and CSS basics.
 
 It's also going to be important to suss out which groups are dysfunctional as early as possible. The two strongest levers to do so are:
 * Dropping by breakout rooms to examine the work that students are doing. 
 * Checking in with student groups who do not meet benchmark deadlines. 
 
-Avoid letting students apportion responsibilities such that one student in a group ends up with a completely nontechnical set of tasks. If, for example, a group tells you "Joseph is writing all the copy for the page in this Google Doc and then Alexandria's doing the HTML and I'm doing the CSS" that's a good sign that Joseph is experiencing some imposter syndrome and this group needs to be reminded to support him in learning HTML, not just cover for him so that he doesn't have to practice it. 
+Avoid letting students allocate responsibilities such that one student in a group ends up with a completely nontechnical set of tasks. If, for example, a group tells you "Joseph is writing all the copy for the page in this Google Doc and then Alexandria's doing the HTML and I'm doing the CSS" that's a good sign that Joseph is experiencing some imposter syndrome and this group needs to be reminded to support him in learning HTML, not just cover for him so that he doesn't have to practice it. 
 
 ## What We’re Building <a id="building"></a>
 
@@ -32,7 +32,7 @@ You and your team will build a website for a business that you intend to start t
 
 The point here is to have fun, get to know your teammates, and practice working together. 
 
-This is also your chance to make sure everyone feels like they've got a good handle on HTML and CSS, and has had a chance to practice making pull requests to GitHub. If you've practiced this before, plan to step into the mentoring role that senior engineers take. If this is your first time, be bold and ask your teammates, TAs, and teacher for help. 
+This is also your chance to make sure everyone feels like they've got a good handle on HTML and CSS, and that each team member has had a chance to practice making pull requests to GitHub. If you've practiced this before, plan to step into the mentoring role that senior engineers take. If this is your first time, be bold and ask your teammates, TAs, and teacher for help. 
 
 ## Requirements
 
@@ -57,7 +57,7 @@ Done well, this launch will take at least 45 minutes, even without students writ
 
 While it's not required that you collect any student work beyond the project itself, sometimes requiring students to submit one or more of the following before they are allowed to log out of class can be an excellent way of ensuring that students are on track, and that they have a focus for their work on any given day. 
 
-These 
+It's ultimately your choice as the instructor whether to communicate any of these as deadlines for your students, but if you find that your students respond well to incremental deadlines and daily expectations, these are good starting points. 
 
 ### Business Plan & Mockups
 
@@ -69,7 +69,7 @@ Have students write an outline of what content will be on each page, and have th
 
 ### Division of Responsibilities
 
-This is a good one to do every single day if students are struggling to apportion work equally. Have each student commit to their peers in writing what work they'll do before the next class. For example,if a group of students is working on a restaurant page like we did on the first day, student A will write the copy for the menu, student B will source the images for the menu, and student C will write the bios. 
+This is a good one to do every single day if students are struggling to allocate work equally. Have each student commit to their peers in writing what work they'll do before the next class. For example, if a group of students is working on a restaurant page like we did on the first day, student A will write the copy for the menu, student B will source the images for the menu, and student C will write the bios. 
 
 Then have students use these DORs as the starting point for a stand-up the next class period. 
 
