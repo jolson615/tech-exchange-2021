@@ -10,7 +10,7 @@ Secondary Objectives
 * See some interesting styling in action
 * Automate or expedite a repetitive task using code or creative problem solving
 
-**Core requirement:** Complete at least two of the five challenges listed below. While they are generally in order of ascending difficulty, you are not required to attempt them in order.
+**Core requirement:** Unless your teacher communicates otherwise, complete at least two of the five challenges listed below. While they are generally in order of ascending difficulty, you are not required to attempt them in order.
 
 ## Context
 
