@@ -38,19 +38,61 @@ Both the instructor and the students should open and work in Google Cloud Shell 
 
 Prior to beginning the lesson, the instructor should open a new python file and copy the launch code, below. 
 
+```python
+class Netflix(object):
+    def __init__(self, name, genre, episodes):
+        self.name = name
+        self.genre = genre
+        self.episodes = episodes
+
+squid_game = Netflix("Squid Game", "thriller", 9)
+bridgerton = Netflix("Bridgerton", "romance", 8)
+tiger_king = Netflix("Tiger King", "true crime", 8)
+
+print(squid_game.genre)
+```
+
 ## Launch
 
-Recommend a warm-up activity to set the stage for the lesson - what are we learning / making / doing and why?
+Explain to students that today's class is focused on classes, which are one of the most useful and versatile parts of the python language. Classes are a way of packaging together information and functions in a way that is easy to use, reuse, and modify.
+
+Show students the launch code. Explain that we have defined a class for Netflix original TV shows. Ask students to predict what will happen when the code runs.
+
+Run the code. It prints "thriller", which is the genre of Squid Game. Try chaging the command to print bridgerton.genre and tiger_king.genre.
+
+Ask students: how do you think we can print out "Tiger King"? Try the suggestions.
+
+Ask students: What do you think the number "9" represents?
+Answer: the number of episodes of Squid Game.
+
 
 ## The Lesson
 
-### Topic 
+### Defining Classes
 
-lesson text, followed by code snippet(s), and then ###Helpful Questions
+Let's dive a little deeper into the code. Slack the code to all of the students so that they can see it on their screens and code along with you. It can be helpful to annotate the code with comments as you explain it.
 
-```html
+This code has 2 different parts: first, we defined a class called Netflix in lines 1-5. This is basically a blueprint for Netflix shows. Each show is going to have a name, a genre, and a number of episodes.
+
+Then, we used that class to create different variables representing specific Netflix shows. Each of these is called an "instance" of the class.
+
+```python
+
+# Defining the Netflix class
+class Netflix(object):
+    def __init__(self, name, genre, episodes):
+        self.name = name
+        self.genre = genre
+        self.episodes = episodes
+
+# Creating instances (specific examples) of the class
+squid_game = Netflix("Squid Game", "thriller", 9)
+bridgerton = Netflix("Bridgerton", "romance", 8)
+tiger_king = Netflix("Tiger King", "true crime", 8)
 
 ```
+
+To define a class, we start with the word "class", the name of the class (usually capitalized, unlike python variables), 
 
 #### Helpful Questions
 * As many as needed
