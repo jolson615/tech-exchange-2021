@@ -56,28 +56,27 @@ print(squid_game.genre)
 
 Explain to students that today's class is focused on classes, which are one of the most useful and versatile parts of the python language. Classes are a way of packaging together information and functions in a way that is easy to use, reuse, and modify.
 
-Show students the launch code. Explain that we have defined a class for Netflix original TV shows. Ask students to predict what will happen when the code runs.
+Show students the launch code. Explain that we have defined a class for Netflix original TV shows.
+
+#### Helpful Questions
+
+* Predict what will happen when the code runs.
 
 Run the code. It prints "thriller", which is the genre of Squid Game. Try chaging the command to print bridgerton.genre and tiger_king.genre.
-
-Ask students: how do you think we can print out "Tiger King"? Try the suggestions.
-
-Ask students: What do you think the number "9" represents?
-Answer: the number of episodes of Squid Game.
-
+* How do you think we can print out "Tiger King"?
+* What do you think the number "9" represents?
 
 ## The Lesson
 
-### Defining Classes
+### Basic Class Walkthrough
 
-Let's dive a little deeper into the code. Slack the code to all of the students so that they can see it on their screens and code along with you. It can be helpful to annotate the code with comments as you explain it.
+Let's dive a little deeper into the code. Share the code with all of the students so that they can see it on their screens and code along with you. It can be helpful to annotate the code with comments as you explain it.
 
 This code has 2 different parts: first, we defined a class called Netflix in lines 1-5. This is basically a blueprint for Netflix shows. Each show is going to have a name, a genre, and a number of episodes.
 
 Then, we used that class to create different variables representing specific Netflix shows. Each of these is called an "instance" of the class.
 
 ```python
-
 # Defining the Netflix class
 class Netflix(object):
     def __init__(self, name, genre, episodes):
@@ -89,15 +88,56 @@ class Netflix(object):
 squid_game = Netflix("Squid Game", "thriller", 9)
 bridgerton = Netflix("Bridgerton", "romance", 8)
 tiger_king = Netflix("Tiger King", "true crime", 8)
-
 ```
 
-To define a class, we start with the word "class", the name of the class (usually capitalized, unlike python variables), 
+To define a class, we start with the word "class", the name of the class (usually capitalized, unlike python variables), and the word "object" in parentheses. Inside the class, we can define data (called "attributes") and fuctions (called "methods" if they are inside a class). This is a pretty basic class, so we have one method, called init, which stands for initialize. The init method is special-- it's the method that runs every time we create an instance of the class. It's like the boot-up code for each new Netflix show. Notice that the init method has 2 underscores before and after the word "init".
+
+Every method is going to take in "self", which stands for the particular instance that we are creating. So for example, when we create squid_game, self represents squid_game. In this case, each method takes in 3 more attributes: the name of the Netflix Original show, the genre, and the number of episodes. Inside the init method, we set self dot each attribute equal to the attribute. This is basically a way of storing all of the information together in one object.
+
+```python
+# Defining the Netflix class
+class Netflix(object):
+    # The __init__ method runs whenever we create a new instance of the class
+    def __init__(self, name, genre, episodes):
+        self.name = name
+        self.genre = genre
+        self.episodes = episodes
+
+# Creating instances (specific examples) of the class
+# The __init__ method runs each time
+squid_game = Netflix("Squid Game", "thriller", 9)
+bridgerton = Netflix("Bridgerton", "romance", 8)
+tiger_king = Netflix("Tiger King", "true crime", 8)
+```
+
+After defining the class, we can use the class "Netflix" to initialize (create) specific instances of the class for specific shows. 
 
 #### Helpful Questions
-* As many as needed
+* How many instances have we created so far?
+* How many attributes does each instance have?
+
+#### Check-In
+Ask students to:
+* Create at least 2 more instances of Netflix shows.
+* Challenge: Modify the class to accept an additional attribute, recommend, a Boolean representing whether or not you would recommend the show. You will need to modify each of the instances of the class as well.
+
+Some examples of additional instances are:
+```python
+bojack_horseman = Netflix("Bojack Horeseman", "cartoon", 49)
+stranger_things = Netflix("Stranger Things", "sci-fi", 25)
+too_hot_to_handle = Netflix("Too Hot to Handle", "reality TV", 19)
+```
+
+ ### Class Methods
 
 Repeat the topic-codeblock-questions loop as many times as needed to create the lesson.
+
+
+### Class Variables
+
+### Inheritance
+
+### Dunders
 
 ## Extensions
 
@@ -110,6 +150,6 @@ Extensions are generally presented in order of difficulty, and should be offered
 
 ## Related Resources
 
-* [link text](linkurl) - What it is
-* [link text](linkurl) - What it is
-* [link text](linkurl) - What it is
+* [Corey Schaffer Tutorial](https://www.youtube.com/watch?v=ZDa-Z5JzLYM&list=PL-osiE80TeTsqhIuOqKhwlXsIBIdSeYtc&index=1) - Excellent YouTube playlist that discusses Object Oriented Programming (OOP) including classes
+* [Codecademy Tutorial](https://www.codecademy.com/courses/learn-python/lessons/introduction-to-classes) - Tutorial that walks through creating and using classes. You will need to create a free account.
+* [W3 Schools Classes/Objects](https://www.w3schools.com/python/python_classes.asp) - Provides examples demonstrating proper syntax for creating and using classes
