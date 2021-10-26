@@ -11,11 +11,11 @@
 ## Context
 
 Students should be familiar with the basics of python, and have been introduced to unit testing. In this lesson, we will introduce a more advanced python topic: Object Orientation. The suggested breakdown of time for this lesson is:  
- 5 min: Intro  
- 40 min: Code-Along  
- 10 min: Break  
- 40 min: Lab  
- 15 min: Debrief the lab and close out lesson  
+ * 5 min: Intro  
+ * 40 min: Code-Along  
+ * 10 min: Break  
+ * 40 min: Lab  
+ * 15 min: Debrief the lab and close out lesson  
 
 ### Teaching Tip
 
@@ -54,7 +54,7 @@ print(squid_game.genre)
 
 ## Launch
 
-Explain to students that today's class is focused on classes, which are one of the most useful and versatile parts of the python language. Classes are a way of packaging together information and functions in a way that is easy to use, reuse, and modify.
+Explain to students that today's class is focused on classes, which are one of the most useful and versatile parts of the Python language. Classes are a way of packaging together information and functions in a way that is easy to use, reuse, and modify.
 
 Show students the launch code. Explain that we have defined a class for Netflix original TV shows.
 
@@ -63,7 +63,7 @@ Show students the launch code. Explain that we have defined a class for Netflix 
 * Predict what will happen when the code runs.
 
 Run the code. It prints "thriller", which is the genre of Squid Game. Try chaging the command to print bridgerton.genre and tiger_king.genre.
-* How do you think we can print out "Tiger King"?
+* How can we print out "Tiger King"?
 * What do you think the number "9" represents?
 
 ## The Lesson
@@ -116,7 +116,7 @@ After defining the class, we can use the class "Netflix" to initialize (create) 
 * How many instances have we created so far?
 * How many attributes does each instance have?
 
-#### Check-In
+#### Practice
 Ask students to:
 * Create at least 2 more instances of Netflix shows.
 * Challenge: Modify the class to accept an additional attribute, recommend, a Boolean representing whether or not you would recommend the show. You will need to modify each of the instances of the class as well.
@@ -128,9 +128,9 @@ stranger_things = Netflix("Stranger Things", "sci-fi", 25)
 too_hot_to_handle = Netflix("Too Hot to Handle", "reality TV", 19)
 ```
 
- ### Class Methods
+ ### Methods
 
-Repeat the topic-codeblock-questions loop as many times as needed to create the lesson.
+So far, objects are a cute way to store data, but we could easily store the same information in dictionaries instead. The real advantage of classes is that they can perform actions (called methods) in addition to storing info. For example, 
 
 
 ### Class Variables
@@ -146,7 +146,7 @@ Extensions are generally presented in order of difficulty, and should be offered
 * At
 * Least
 * Five
-* Extensions (roughly ascending difficulty)
+* Extensions (roughly ascending difficulty) hello
 
 ## Related Resources
 
