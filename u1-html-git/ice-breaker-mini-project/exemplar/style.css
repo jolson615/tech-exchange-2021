@@ -1,0 +1,29 @@
+h1{
+  font-size: 50px;
+  text-align: center;
+  font-family: 'Rampart One', cursive;
+  text-shadow: 2px 2px #ffffff;
+  padding-top: 50px;
+}
+
+p{
+  font-family: 'Roboto', sans-serif;
+}
+
+body,html{
+  height: 100%;
+}
+
+body{
+  text-align: center;
+  background-image: url("dogbg.jpeg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+a:hover{
+  font-size:40px;
+  text-shadow: 2px 3px coral;
+}
