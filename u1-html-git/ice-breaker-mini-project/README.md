@@ -19,7 +19,7 @@
 
 This is the first time students will be working together on a project, and even though it is a mini one, it's a great chance to check-in on their collaboration skills. This project will require an interview, some basic HTML/CSS work, and then a little bit of collaboration to build a homepage/landing page for all of the partner profiles.
 
-Make sure to check-in and ensure that the group members are communicating to each other. The easiest way to do this is to drop into break out rooms and see what students are up to!
+If they have class work time, make sure to check-in and ensure that the group members are communicating to each other. The easiest way to do this is to drop into break out rooms and see what students are up to!
 
 ## What We’re Building <a id="building"></a>
 
@@ -28,20 +28,20 @@ You and your team will build a multipage website to represent - well, your team!
 * A homepage with a cohesive design that links to each of your profiles.
 * A profile for each team member, completed by a different team member.
 
-How you theme these pages is up to you! The goal here is to practice the HTML and CSS we have learned so far, so don't feel pressured to make the _most beautiful_ website you've ever seen - just focus on trying to make it **fun** and representative of your group. We understand you are each coming in with your own level of prior knowledge or comfort with web design and we want to give each of you a chance to shine at whatever level you are at.
+How you theme these pages is up to you! The goal here is to practice the HTML and CSS we have learned so far, so don't feel pressured to make the _most beautiful_ website you've ever seen - just focus on trying to make it **fun** and representative of your group. Our big goal here is for you to get to know each other! We understand you are each coming in with your own level of prior knowledge or comfort with web design and we want to give each of you a chance to shine at whatever level you are at.
 
 ## Requirements
 
 Each group's project must demonstrate each of the following:
 * An index.html page that links to each partner profile
 * A .html profile page for each team member, created by someone who is not that team member.
-* As many different HTML tags as you can include - there is no specific numeric requierment, but try to practice as many of the skills we have learned as possible.
+* As many different HTML tags as you can include - there is no specific numeric requirement, but try to practice as many of the skills we have learned as possible.
 * CSS as you feel comfortable. There is no requirement on how you do this or the number of rules you set - for this project, anyway - but you should try to integrate enough to add some flair to your page.
 * You must make something you're proud of!
 
 ## Launch
 
-Split students into groups of ~3 (bump up to 4 or down to 2 if you absolutely must) and tell them that their goal is to get to know each other better. Each person must conduct an interview of another group member and must ask them at least 5, but as many questions as possible in 5 minutes, and take notes on their responses. Students can use whatever quesitons they'd like or you can provide some lists to pick from:
+Split students into groups of ~3 (bump up to 4 or down to 2 if you absolutely must) and tell them that their goal is to get to know each other better. Each person must conduct an interview of another group member and must ask them at least 5, but as many questions as possible in 3 minutes, and take notes on their responses. Students can use whatever questions they'd like or you can provide some lists to pick from:
 
 **The Basic Questions**
 * What's your middle name?
@@ -72,7 +72,7 @@ After students interview, bring them back and explain the project: the people th
 
 Since this is a mini project and their first time practicing with HTML/CSS, it is okay if this is not the most polished project ever, and even if each student takes the individual profile page in a different direction. Encourage students to make a wireframe of what they would like the profile they are making to look like and to collaborate together to make a vision for the homepage, as this will help with execution and debugging later. This plan can be made on paper, Jamboard, Google Drawings, or any other site that will allow them to plan and annotate their notes.
 
-Once students have their plans made, they can begin coding. From interview to the end of the planning, it should take about 40 - 45 minutes before worktime begins.
+Once students have their plans made, they can begin coding. From interview to the end of the planning, it should take about 30 minutes before work time begins.
 
 ## Recommended Benchmarks
 
