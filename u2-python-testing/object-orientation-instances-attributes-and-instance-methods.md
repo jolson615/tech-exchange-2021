@@ -205,16 +205,17 @@ print (bridgerton.network)
 print(tiger_king.network)
 ```
 
-### Dunders
+### STRETCH: Dunders
 
 ## Extensions
 
 Extensions are generally presented in order of difficulty, and should be offered to students with that caveat in mind. It's not critical that students do these activities specifically, but these are a good starting place. 
-* List
-* At
-* Least
-* Five
-* Extensions (roughly ascending difficulty) hello
+* Define a class called Celebrity that can be used to create objects representing famous people. The class should take at least 3 parameters: first name, last name, and type (actor/actress, politician, athlete, etc)
+* Create at least 2 instances of the Celebrity class
+* Define a property called "full_name" that combines the first and last names
+* Write a method that greets the celebrity by name
+* Write a method that returns an Onion (satire) headline based on the type of celebrity and using the celebrity's name
+* Create a private variable to store a secret message to the celebrity
 
 ## Related Resources
 
