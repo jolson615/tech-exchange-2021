@@ -127,15 +127,83 @@ bojack_horseman = Netflix("Bojack Horeseman", "cartoon", 49)
 stranger_things = Netflix("Stranger Things", "sci-fi", 25)
 too_hot_to_handle = Netflix("Too Hot to Handle", "reality TV", 19)
 ```
+### Updating Values
+What if Netflix releases a new season of Squid Game? We will need to update the number of episodes.
+
+```python
+print(squid_game.episodes)
+squid_game.episodes += 10
+print(squid_game.episodes)
+```
 
  ### Methods
 
-So far, objects are a cute way to store data, but we could easily store the same information in dictionaries instead. The real advantage of classes is that they can perform actions (called methods) in addition to storing info. For example, 
+So far, class objects are a cute way to store data, but we could easily store the same information in dictionaries instead. The real advantage of classes is that they can perform actions (called methods) in addition to storing info. For example, if we want to print a bunch of recommendations for friends to try a certain show, we can define a method to do this:
+
+```python
+# Defining the Netflix class
+# Defining the Netflix class
+class Netflix(object):
+    # The __init__ method runs whenever we create a new instance of the class
+    def __init__(self, name, genre, episodes):
+        self.name = name
+        self.genre = genre
+        self.episodes = episodes
+    def friend_rec(self, friend):
+        return ("I really think that " + friend + " would love " + self.name)   
+
+# Creating instances (specific examples) of the class
+# The __init__ method runs each time
+squid_game = Netflix("Squid Game", "thriller", 9)
+bridgerton = Netflix("Bridgerton", "romance", 8)
+tiger_king = Netflix("Tiger King", "true crime", 8)
+
+print(tiger_king.friend_rec("Daphne"))
+print(bridgerton.friend_rec("Joe"))
+        
+```
+
+Note that we define our method inside of the class. The first parameter for the method is self, meaning that it applies to the particular instance of the class (aka one specific Netflix show). In this case, we are defining the method to also take a second parameter, the friend who we think should watch the show. 
+
+
+#### Helpful Questions
+* What do you think will happen when I run this code?
+* How could I recommend Squid Game to Carole?
+* Where have you seen this type of notation before?
+Common answers: list/string methods! In python, lists and strings are class object that comes with predefined methods like list.append(), list.pop(), string.lower(), etc.
+
+#### Practice
+Ask students to:
+* Write a method that returns "___ is my favorite show!" using the name of the show
+* Write a method that returns a message based on the genre of the show (ex. if the genre is horror, return "This is too scary for me!!" and if the show is comedy, return "lol", etc.)
+* Write a method that returns a randomly-selected episode number to watch
 
 
 ### Class Variables
+So far, we have used the init function to assign a name, genre, and number of episodes to each Netflix show object when we create it. However, sometimes we have a variable that is the same for all or nearly all instances of the class. In that case, it would be tedious to have to type the same thing every time we create a new instance. Instead, we can define a class variable. For example, all of the shows we are looking at are on the Netflix network:
 
-### Inheritance
+```python
+# Defining the Netflix class
+class Netflix(object):
+    network = "Netflix"
+    # The __init__ method runs whenever we create a new instance of the class
+    def __init__(self, name, genre, episodes):
+        self.name = name
+        self.genre = genre
+        self.episodes = episodes
+    def friend_rec(self, friend):
+        return ("I really think that " + friend + " would love " + self.name)   
+
+# Creating instances (specific examples) of the class
+# The __init__ method runs each time
+squid_game = Netflix("Squid Game", "thriller", 9)
+bridgerton = Netflix("Bridgerton", "romance", 8)
+tiger_king = Netflix("Tiger King", "true crime", 8)
+
+print (squid_game.network)
+print (bridgerton.network)
+print(tiger_king.network)
+```
 
 ### Dunders
 
