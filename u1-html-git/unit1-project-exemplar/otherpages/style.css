@@ -1,0 +1,17 @@
+
+.heading, .logo{
+  font-family: 'Cabin Sketch', cursive;
+}
+
+body{
+  font-family: 'Zen Kaku Gothic Antique', sans-serif;
+}
+
+#mariah{
+  border-radius: 50%;
+  padding-top: 40px;
+}
+
+#make{
+  text-align: center;
+}
