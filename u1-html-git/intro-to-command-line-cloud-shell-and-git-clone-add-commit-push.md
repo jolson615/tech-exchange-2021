@@ -26,7 +26,7 @@ In this lesson, we will introduce Git and Github as version control and collabor
 
 Instructors and students should have created accounts on Github and on Cloud Shell. 
 
-Instructors should also organize their Github repositories to make it easy to demo in the introduction of Github. 
+Instructors should also organize their Github repositories to make it easy to demo in the introduction of Github. Repository names  and the hierarchy of the files should be self explanatory.
 
 Prepare a Github repository with an index.html file that contains links to the students' files. These links will not be functional yet but are placeholders for now. 
 Example: 
@@ -80,8 +80,6 @@ Prompt the students to try to think back to when computers were still new and st
 
 ### What is Git and Github 
 
-lesson text, followed by code snippet(s), and then ###Helpful Questions
-
 Provide a brief introduction of Git and Github. Make sure that students understand the difference between Git and Github. 
 
 Git is a version control system that allows you to track the history of your files. Github is a web based service that allows you to host Git repositories. 
@@ -93,7 +91,7 @@ Take the students on a tour through Github. Browse through your own repositories
 * What are some benefits to seeing other public repositories?
 
 ### Navigating Through  Files
-When students are coding, it is important that they know where their files are being stored. WHen they first open the Cloud Shell editor guide them to the Terminal and navigate through the workspace by using the commands: 
+When students are coding, it is important that they know where their files are being stored. When they first open the Cloud Shell editor guide them to the Terminal and navigate through the workspace by using the commands: 
 * pwd
 * ls
 * cd
