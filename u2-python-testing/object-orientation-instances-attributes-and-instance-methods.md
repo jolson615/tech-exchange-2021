@@ -10,12 +10,7 @@
 
 ## Context
 
-Students should be familiar with the basics of python, and have been introduced to unit testing. In this lesson, we will introduce a more advanced python topic: Object Orientation. The suggested breakdown of time for this lesson is:  
- * 5 min: Intro  
- * 40 min: Code-Along  
- * 10 min: Break  
- * 40 min: Lab  
- * 15 min: Debrief the lab and close out lesson  
+Students should be familiar with the basics of python, and have been introduced to unit testing. In this lesson, we will introduce a more advanced python topic: Object Orientation.  
 
 ### Teaching Tip
 
@@ -202,10 +197,73 @@ tiger_king = Netflix("Tiger King", "true crime", 8)
 
 print (squid_game.network)
 print (bridgerton.network)
-print(tiger_king.network)
+print (tiger_king.network)
 ```
 
 ### STRETCH: Dunders
+
+This topic is not essential content, but it can be a great stretch topic for advanced students.
+
+Most variables can be accessed and updated using dot syntax. For example, if a new season of Squid Game adds 10 more episodes, we can update the episode count:
+
+```python
+print(squid_game.episodes)
+squid_game.episodes += 10
+print(squid_game.episodes)
+```
+
+However, sometimes you want to make a variable that is not so easily manipulable, such as user data. In this case, we can use dunders (which stands for double underscores). Let's use dunders to hide an easter egg.
+
+```python
+class Netflix(object):
+    network = "Netflix"
+    # The __init__ method runs whenever we create a new instance of the class
+    def __init__(self, name, genre, episodes):
+        self.name = name
+        self.genre = genre
+        self.episodes = episodes
+        self.__easter = "secret message"
+    
+# Creating instances (specific examples) of the class
+# The __init__ method runs each time
+squid_game = Netflix("Squid Game", "thriller", 9)
+
+print(squid_game.__easter)
+```
+
+Running this code produces an error saying "'Netflix' object has no attribute '__easter'". In other words, we cannot read this dunder variable like we can a normal variable.
+
+In order to read the secret message, we need a getter method, and to update it, we need a setter method:
+
+```python
+# Defining the Netflix class
+class Netflix(object):
+    network = "Netflix"
+    # The __init__ method runs whenever we create a new instance of the class
+    def __init__(self, name, genre, episodes):
+        self.name = name
+        self.genre = genre
+        self.episodes = episodes
+        self.__easter = "secret message"
+    def friend_rec(self, friend):
+        return ("I really think that " + friend + " would love " + self.name)   
+
+    def get_easter(self):
+        return self.__easter
+
+    def set_easter(self, value):
+        self.__easter = value
+
+print(squid_game.get_easter())
+squid_game.set_easter("Green light... red light")
+print(squid_game.get_easter())
+```
+
+#### Helpful Questions
+* Why does squid_game.get_easter() end with parentheses?
+get_easter() is a method rather than an attribute
+* How would you set the Bridgerton easter egg to "I burn for you"?
+* What sort of data would you expect to be stored using dunders? 
 
 ## Extensions
 
