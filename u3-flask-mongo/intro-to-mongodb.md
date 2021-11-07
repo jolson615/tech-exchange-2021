@@ -40,6 +40,7 @@ Today we're making a database of computer programming languages.  We'll be creat
 ## The Lesson
 
 ### Setting Up MongoDB
+<img width="1241" alt="mongodb" src="https://user-images.githubusercontent.com/37776449/140630209-5221a82e-97d6-4cc0-8c43-455c61f20f1f.png">
 
 Navigate to mongodb.com and click 'Try Free' on the homepage.  After you create an account, select 'Create New Cluster'.
 * Select a shared server, rather than a paid dedicated server.
@@ -47,10 +48,12 @@ Navigate to mongodb.com and click 'Try Free' on the homepage.  After you create 
 * Select the M0 sandbox tier, as this is free forever.
 * Give your cluster a name (Cluster0 is a good default).
 * Create the cluster and wait a few minutes will the server is provisioned.
+<img width="943" alt="cluster" src="https://user-images.githubusercontent.com/37776449/140630212-52265fe7-0569-4a78-9025-9f559c24afc2.png">
 
 Once you have created the cluster, you will need to add a database.
 * From your database deployments page, select Browse Collections
 * Create a new database named 'database' with a collection named 'programming_languages'
+<img width="1403" alt="Screen Shot 2021-11-06 at 9 23 47 PM" src="https://user-images.githubusercontent.com/37776449/140630195-409ce990-d747-4a32-b436-bb5ba7d94236.png">
 
 Next, you will need to create a user with access to this database.  On your database deployments page, select 'Database Access' from the Security nav bar.
 * Click 'Add New Database User'.
@@ -137,6 +140,8 @@ You create duplicate entries.
 
 ### Reading Entries in a Database
 You can read your entries directly in the collections tab of your MongoDB dashboard.  You can even edit entries directly in this interface.  If you have any duplicate entries, float over them and select the trash icon to delete them now.
+<img width="1392" alt="Screen Shot 2021-11-06 at 10 37 33 PM" src="https://user-images.githubusercontent.com/37776449/140630259-84b56256-701e-4215-8d4c-7e4251949c67.png">
+
 
 Users of our apps can't view this dashboard, so we want a way to retrieve results in our Python file.  We can do this with PyMongo's .find() method
 
