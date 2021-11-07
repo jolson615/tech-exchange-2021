@@ -18,11 +18,11 @@ Clone this lab to the coding environment of your choice.
 Open up the repository in your editor. 
 
 In the main branch of this lab, you will find the items you are looking for. Each room is a different branch on the repository. These are all of the rooms in the house:
-* Bedroom
-* Kitchen
-* Living Room
-* Dining Room
-* Basement
+* scavenger-hunt-bedroom
+* scavenger-hunt-kitchen
+* scavenger-hunt-living-room
+* scavenger-hunt-dining-room
+* scavenger-hunt-basement
 
 When you find an object that matches the description of the item on your scavenger list, edit the file to write the description next to the object name in brackets [].
 
