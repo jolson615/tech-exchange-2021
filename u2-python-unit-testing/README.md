@@ -13,7 +13,7 @@ Hi Tech Exchange team,
 
 I’m glad to hear you’ll be taking over the currency converter functions.  We’ve had some challenges with these functions in the past because of errors elsewhere in our code base.  The key challenge here is that it’s not enough for our currency converters to get the math right.  There should be sufficient error handling that if the functions are called incorrectly elsewhere, the error won’t be passed on.
 
-I developed a set of unit tests for you to use in writing these functions.  Our team is shifting toward fully test-driven development, meaning that we write our unit tests before writing the code.  This practice has helped us prevent unhandled errors and has shifted our mindset around development.  We are w
+I developed a set of unit tests for you to use in writing these functions.  Our team is shifting toward fully test-driven development, meaning that we write our unit tests before writing the code.  This practice has helped us prevent unhandled errors and has shifted our mindset around development.
 
 You can run these unit tests from the command line by name:
 python -m unittest test_cad_converter
