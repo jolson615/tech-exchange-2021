@@ -10,9 +10,7 @@
 
 ## Context
 
-### If you need subheadings for any main heading, use an h3 (three hashtags)
-
-Explain the context for this lesson
+Students have recently learned OOP and practiced writing class definitions and creating instances of a class. In the previous lab, students wrote and modified class definitions based on feedback from pre-existing unit tests. In this lesson, students will learn to write their own unit tests to evaluate classes.
 
 ## Objectives
 
@@ -20,26 +18,120 @@ Explain the context for this lesson
 
 ## Setup
 
-Describe any technical setup
+Encourage students to create a new folder for today's files. Students should create and open a students.py file and a test_students.py file.
 
 ## Launch
 
-Recommend a warm-up activity to set the stage for the lesson - what are we learning / making / doing and why?
+Today, we're going to be making a class to represent students at a college. I've created a basic definition and 3 instances using the characters from the show Community, but there are some problems:
+
+```python
+class Student:
+    '''A class to store information for college students'''
+    def __init__(self, first, last, year=1):
+        self.first = first
+        self.last = last
+        self.year = year
+
+student1 = Student("Jeff", "Winger", 4)
+student2 = Student("Britta Perry", 3)
+student3 = Student("Pierce", "Hawthorne", 66)
+
+print(student1.first)
+print(student2.last)
+print(student3.year)
+```
+
+What will happen when we run the code?
+
+It looks like when Britta was filling out her paperwork, she accidentally put both her first and last name in the "first name" field, and now her year is accidentally being saved as her last name. And Pierce listed his age rather than his year at the school.
+
+We can use unit testing to catch some of these mistakes!
 
 ## The Lesson
 
-### Topic 
+### Getting Started Unit Testing Classes 
 
-lesson text, followed by code snippet(s), and then ###Helpful Questions
+It is conventional to write our unit tests in a separate file (separation of concerns) that begins with test_ and then the name of the file to be tested. In this case we will create a test_students.py file. Inside this file, we need to import the unittest module and the class that we are trying to test.
 
-```html
+Next, we will need to create our test case. Finally we add code so that the unit test runs automatically:
 
+```python
+import unittest
+from students import Student
+
+class TestStudent(unittest.TestCase):
+    pass
+
+if __name__ == '__main__':
+    unittest.main()
 ```
 
 #### Helpful Questions
-* As many as needed
+* Why is it useful to start writing unit tests before writing class methods?
+* How can we write unit tests that will catch the errors we saw?
 
-Repeat the topic-codeblock-questions loop as many times as needed to create the lesson.
+### Testing the init Method
+Let's start by writing some tests to check our basic init method. Let's comment out the faulty class instances in the students.py file and instead create some test instances in our test_students.py file. Then we can verify that these instances are created properly.
+
+```python
+class TestStudent(unittest.TestCase):
+    def test_init(self):
+        student1 = Student("Jeff", "Winger", 4)
+        student2 = Student("Annie", "Edison", 2)
+
+        #Check for accuracy
+        self.assertAlmostEqual(student1.first, "Jeff")
+        self.assertAlmostEqual(student2.last, "Edison")
+        self.assertAlmostEqual(student1.year, 4)
+```
+
+Run the test by typing "python test_students.py" in terminal. 
+
+### Testing for Type Errors
+It looks like our code passes this basic test, so let's add some tests to check that our faulty students will raise errors. Note that assertRaises doesn't require you to provide all arguments, so it's helpful to name the arguments that you are providing:
+
+```python
+    def test_init_types(self):
+        # Check for type errors
+        self.assertRaises(TypeError, Student, first = "Britta Perry", last = 3)
+```
+
+When we run this test, our code fails-- right now, our class is not raising the type error that it should when we pass in the wrong type of data. We can fix this in our students.py file:
+
+```python
+class Student:
+    '''A class to store information for college students'''
+    def __init__(self, first, last, year=1):
+        if type(last) != str:
+            raise TypeError("Last name must be a string")
+        self.first = first
+        self.last = last
+        self.year = year
+```
+
+### Practice
+* In the test_students.py file, add tests to check the data type for first name and year
+* Edit the students.py to correctly raise type errors when first name or year are the wrong data type
+* Edit the test_students.py file to check multiple different data types (boolean, None, string, integer, float)
+
+#### Helpful Questions
+* Why is it useful to test multiple different data types?
+* Why won't this test catch the problem of Pierce Hawthorne putting his age instead of his year?
+* How can we create a test that will catch Pierce's problem?
+
+### Testing for Value Errors
+If Pierce Hawthorne inputs 66 for his year, no type error is raised, because the program is expecting an int. We can check for a value error instead. Inside of test_students.py:
+
+```python
+def test_init_values(self):
+        self.assertRaises(ValueError, Student, first = "Pierce", last = "Hawthorne", year = 66)
+```
+
+Our current code fails this test. To pass the test, we must modify students.py:
+```python
+if year < 1 or year > 10:
+            raise ValueError("Year represents the number of years the student has been enrolled (rounded up) and must be an integer from 1 to 9")
+```
 
 ## Extensions
 
@@ -54,4 +146,4 @@ Extensions are generally presented in order of difficulty, and should be offered
 
 * [link text](linkurl) - What it is
 * [link text](linkurl) - What it is
-* [link text](linkurl) - What it is
+* [Corey Schafer Unit Testing Tutorial](https://www.youtube.com/watch?v=6tNS--WetLI) - A YouTube code-along that explains how to write unit tests for functions and classes.
