@@ -187,8 +187,8 @@ More predictable output (always a single object) that's easier to print (no need
 Extensions are generally presented in order of difficulty, and should be offered to students with that caveat in mind. It's not critical that students do these activities specifically, but these are a good starting place. 
 * Add three more languages to the collection.
 * Find the three most recently created languages.
-* Write a function that accepts a count as a parameter and returns a formatted string listing that many designer names.
-* Write a function that accepts a year as a parameter and returns a formatted string listing all programs released that year.
+* Write a function that accepts a count as an argument and returns a formatted string listing that many designer names.
+* Write a function that accepts a year as an argument and returns a formatted string listing all programs released that year.
 
 ## Related Resources
 * [Mongo DB](https://www.mongodb.com/) - Document Database with cloud service
