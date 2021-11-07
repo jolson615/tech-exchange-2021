@@ -93,7 +93,7 @@ Run the file by typing 'python3 languages.py' in your terminal.
 ```PYTHON
 import pymongo
 
-client = pymongo.MongoClient("mongodb+srv://feedbackLoop:TestUserPassword1!@cluster0.0nsou.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
+client = pymongo.MongoClient("mongodb+srv://<username>:<password>@cluster0.0nsou.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
 
 db = client.database
 db.create_collection('languages')
@@ -113,7 +113,7 @@ The first PyMongo method is .insert_one.  Insert three programming languages to 
 import pymongo
 
 #mongo client connection
-client = pymongo.MongoClient("mongodb+srv://feedbackLoop:TestUserPassword1!@cluster0.0nsou.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
+client = pymongo.MongoClient("mongodb+srv://<username>:<password>@cluster0.0nsou.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
 
 #initialize variable to access database
 db = client.database
