@@ -113,7 +113,7 @@ find_by_last_name("H")
 # searches should not be case-sensitive
 # note that this requires the use of regular expressions
 def search_name(name):
-    '''Returns the designers whose name is entered as name (str)'''
+    '''Returns the designer whose name is entered as name (str)'''
     query = {"designer":{"$regex":name,"$options":"i"}}
     entry = langs.find_one(query)
     print(entry['designer'])
