@@ -248,17 +248,34 @@ Note that in order to be able to access student1 and student2 from within our ot
 
 Possible answer: tearDown could be useful if each test creates a new file that we don't need to keep. 
 
+### Testing Other Methods
+Let's practice testing a method other than init. We want a method called greeting that will say "Welcome to campus!" for freshmen and "Welcome back!" for everyone else. Let's write some unit tests for this method:
+
+```python
+    def test_greeting(self):
+        self.assertEqual(self.student1.greeting(), "Welcome back!")
+        self.student2.year = 1
+        self.assertEqual(self.student2.greeting(),"Welcome to campus!")
+```
+
+#### Helpful Questions
+* Why is it important to test with both a freshmen and another student?
+
+#### Practice
+* Edit students.py to add a greeting method that passes our unit test
+* Add a docstring to your method so that other programmers can easily figure out how to use it
+
 ## Extensions
 
 Extensions are generally presented in order of difficulty, and should be offered to students with that caveat in mind. It's not critical that students do these activities specifically, but these are a good starting place. 
-* List
-* At
-* Least
-* Five
-* Extensions (roughly ascending difficulty)
+* Modify the class to include a Boolean attribute called lives_on_campus. Add a unit test that verifies that a type error is raised when a new instance of the Student class is created with an incorrect lives_on_campus data type.
+* Create a unit test that checks for a class variable called tuition with a value of 20000. Modify the students.py file to pass the test.
+* Add an attribute called aid with a default of 0. Create a unit test that checks for a net_cost method calculating the net cost by adding tuition, plus $25000 for room and board if the student lives on campus, minus the amount of financial aid that they receive. Modify the students.py file to pass the test.
+* Add an attribute called GPA. Create a unit test that checks for a deans_list function which returns a Boolean value based on whether a student makes the Dean's List (GPA of at least 3.5). Modify the students.py file to pass the test.
+* Create unit tests for a class called Faculty which includes attributes for first name, last name, department, and a list of classes taught. Code the class definition in order to pass the tests. Place your code in appropriately-named files, making sure to separate concerns.
 
 ## Related Resources
 
-* [link text](linkurl) - What it is
-* [link text](linkurl) - What it is
+* [Python Unit Testing Documentation](https://docs.python.org/3/library/unittest.html) - The detailed unit testing documentation from python.
+* [How to Write a Unit Test in Python](https://codefather.tech/blog/write-unit-test-python/) - Blog post that walks through how to write unit tests for a Python class
 * [Corey Schafer Unit Testing Tutorial](https://www.youtube.com/watch?v=6tNS--WetLI) - A YouTube code-along that explains how to write unit tests for functions and classes.
