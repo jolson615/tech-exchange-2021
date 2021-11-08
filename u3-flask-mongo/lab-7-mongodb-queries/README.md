@@ -12,7 +12,7 @@ A local nonprofit **src_code** is building a website about popular programming l
 
     Hi Tech Exchange,
 
-    Thanks so much for volunteering your time to support **src_code!**  The flask app that we're running our site from is coming along nicely but I want to make it more informative by drawing on our database of programming languages.
+    Thanks so much for volunteering your time to support src_code!  The flask app that we're running our site from is coming along nicely but I want to make it more informative by drawing on our database of programming languages.
 
     First of all, we need help getting the database into the cloud.  Right now our information is just in a file names **language_seed.py**.  There's a file called **reset_collection.py** that can insert all the data to a cloud database, but you need to put in your connection url before your run it.
 
