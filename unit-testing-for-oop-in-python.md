@@ -80,8 +80,8 @@ class TestStudent(unittest.TestCase):
         student2 = Student("Annie", "Edison", 2)
 
         #Check for accuracy
-        self.assertAlmostEqual(student1.first, "Jeff")
-        self.assertAlmostEqual(student2.last, "Edison")
+        self.assertEqual(student1.first, "Jeff")
+        self.assertEqual(student2.last, "Edison")
         self.assertAlmostEqual(student1.year, 4)
 ```
 
@@ -132,6 +132,121 @@ Our current code fails this test. To pass the test, we must modify students.py:
 if year < 1 or year > 10:
             raise ValueError("Year represents the number of years the student has been enrolled (rounded up) and must be an integer from 1 to 9")
 ```
+
+### Adding Complexity: Email and Full Name
+Let's add some complexity to our class. Let's write a test that will check that each student has an email given by first.last@college.edu and a full name that concatenates their first and last names.
+
+```python
+    def test_email(self):
+        student1 = Student("Jeff", "Winger", 4)
+        student2 = Student("Annie", "Edison", 2)
+        self.assertEqual(student1.email, "jeff.winger@college.edu")
+        self.assertEqual(student2.email, "annie.edison@college.edu")
+    
+    def test_full(self):
+        student1 = Student("Jeff", "Winger", 4)
+        student2 = Student("Annie", "Edison", 2)
+        self.assertEqual(student1.full, "Jeff Winger")
+        self.assertEqual(student2.full, "Annie Edison")
+```
+
+Once we have our unit tests, we need to update our students.py file to match:
+
+```python
+        self.first = first
+        self.last = last
+        self.year = year
+        self.email = '{}.{}@college.edu'.format(self.first.lower(), self.last.lower())
+        self.full = '{} {}'.format(self.first, self.last)
+```
+
+#### Helpful Questions
+* Do you think it makes more sense to write the unit test or the class first? Why?
+* Where are there inefficiencies in our current code?
+
+### Setup and Teardown
+
+Currently our unit test code repeats the creation of student1 and student2 three times. This violates the DRY principle of programming: Don't Repeat Yourself. We can make our code more efficient by combining these 3 sections into one using a setup method. The setup code repeats before every test.
+
+Inefficient original code:
+```python
+class TestStudent(unittest.TestCase):
+    def test_init(self):
+        #Check for accuracy
+        student1 = Student("Jeff", "Winger", 4)
+        student2 = Student("Annie", "Edison", 2)
+        self.assertEqual(student1.first, "Jeff")
+        self.assertEqual(student2.last, "Edison")
+        self.assertAlmostEqual(student1.year, 4)
+
+    def test_init_types(self):
+        # Check for type errors
+        self.assertRaises(TypeError, Student, first = "Britta Perry", last = 3)
+    
+    def test_init_values(self):
+        # Check for value errors
+        self.assertRaises(ValueError, Student, first = "Pierce", last = "Hawthorne", year = 66)
+
+    def test_email(self):
+        # Check that the email is created correctly
+        student1 = Student("Jeff", "Winger", 4)
+        student2 = Student("Annie", "Edison", 2)
+        self.assertEqual(student1.email, "jeff.winger@college.edu")
+        self.assertEqual(student2.email, "annie.edison@college.edu")
+    
+    def test_full(self):
+        # Check that the full name attribute is created correctly
+        student1 = Student("Jeff", "Winger", 4)
+        student2 = Student("Annie", "Edison", 2)
+        self.assertEqual(student1.full, "Jeff Winger")
+        self.assertEqual(student2.full, "Annie Edison")
+```
+
+More efficient code:
+```python
+class TestStudent(unittest.TestCase):
+    def setUp(self):
+        #This code runs before every test
+        print("running setUp")
+        self.student1 = Student("Jeff", "Winger", 4)
+        self.student2 = Student("Annie", "Edison", 2)
+
+    def tearDown(self):
+        #This code runs after every test
+        print("running tearDown")
+
+    def test_init(self):
+        #Check for accuracy
+        self.assertEqual(self.student1.first, "Jeff")
+        self.assertEqual(self.student2.last, "Edison")
+        self.assertAlmostEqual(self.student1.year, 4)
+
+    def test_init_types(self):
+        # Check for type errors
+        self.assertRaises(TypeError, Student, first = "Britta Perry", last = 3)
+    
+    def test_init_values(self):
+        # Check for value errors
+        self.assertRaises(ValueError, Student, first = "Pierce", last = "Hawthorne", year = 66)
+
+    def test_email(self):
+        # Check that the email is created correctly
+        self.assertEqual(self.student1.email, "jeff.winger@college.edu")
+        self.assertEqual(self.student2.email, "annie.edison@college.edu")
+    
+    def test_full(self):
+        # Check that the full name attribute is created correctly
+        self.assertEqual(self.student1.full, "Jeff Winger")
+        self.assertEqual(self.student2.full, "Annie Edison")
+```
+
+Note that in order to be able to access student1 and student2 from within our other tests, we must add self. in front, turning them into instance attributes of each test.
+
+#### Helpful Questions
+* What will be printed when we run the code?
+* Right now we are not actually using tearDown. What would be a situation where it would be useful?
+
+Possible answer: tearDown could be useful if each test creates a new file that we don't need to keep. 
 
 ## Extensions
 
