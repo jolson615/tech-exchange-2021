@@ -38,20 +38,22 @@ There are several routes that you can take for creating a back-end python progra
 * Creating a recommender or matching algorithm (think Netflix show recommendations)
 * [STRETCH] Combining any of the above with an API to expand your project scope
 
-In order to adhere to Test Driven Development practices, your team should write unit tests for your key functions and classes BEFORE coding them.  
+In order to adhere to Test Driven Development practices, your team should write unit tests for your key functions and classes BEFORE coding them. Following industry best-practices, you should each write code to be tested by a different team member's tests. 
 
 ## Requirements
 
 Each group's project must demonstrate each of the following:
 * A functional program that could be used to help a business organize information or serve clients
-* Unit tests for at least 6 different functions or classes
+* Unit tests that verify accuracy, type errors, and value errors, for at least 6 different functions, classes, or methods
 * Code that satisfies each unit test, written by a different team member
 * Proper separation of concerns
 * You must make something you're proud of!
 
 ## Launch
 
-Explain how to launch the project, with an emphasis on how to guide ideation.
+Allow groups time to decide whether to continue using their business idea from project 1, or switch to a different idea. Encourage groups to come up with a 1-2 sentence statement of purpose ("This pet playdate system will store user information for different pets and allow them to interact by sending each other messages, barking, meowing, or tail wagging. It will also keep track of the petPoints (in-app currency) for each user and allow them to redeem petPoints for treats.")
+
+Once they have a statement of purpose, teams should identify 6 key functions/classes/methods, as well as a basic idea of how those components would be combined to generate the overall functionality. Guide students through setting up their files and determining who will write each unit test and the corresponding function/class. Students should begin the coding process by writing unit tests.
 
 ## Recommended Benchmarks
 
@@ -59,13 +61,13 @@ While it's not required that you collect any student work beyond the project its
 
 It's ultimately your choice as the instructor whether to communicate any of these as deadlines for your students, but if you find that your students respond well to incremental deadlines and daily expectations, these are good starting points. 
 
-### Recommended Benchmark 1
+### Statement of Purpose and Key Code Structures
 
-Name the benchmark and describe it here. 
+Have students submit their statement of purpose, a list of 6 key functions/classes (name and a docstring that describes the function), and a short paragraph explaining how these code structures will fit together to generate the overall program. A Google form can be a great way to collect this information.
 
-### Recommended Benchmark 2
+### Unit Tests
 
-Name the benchmark and describe it here. 
+Have students write unit tests for each of their key code structures.
 
 ### Etc...
 
