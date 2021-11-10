@@ -1,7 +1,7 @@
 # Python Quest
 
 ## Playing the Game
-To begin a game of Python Quest, run ```python3 rpg.py```
+To begin a game of Python Quest, clone this repo and run ```python3 rpg.py``` in your terminal
 
 To play, respond to the provided prompts on the command line
 
