@@ -44,7 +44,7 @@ In order to adhere to Test Driven Development practices, your team should write 
 
 Each group's project must demonstrate each of the following:
 * A functional program that could be used to help a business organize information or serve clients
-* Unit tests that verify accuracy, type errors, and value errors, for at least 6 different functions, classes, or methods
+* Unit tests that verify accuracy, type errors, and value errors, for at least 3 different functions or classes
 * Code that satisfies each unit test, written by a different team member
 * Proper separation of concerns
 * You must make something you're proud of!
@@ -53,7 +53,7 @@ Each group's project must demonstrate each of the following:
 
 Allow groups time to decide whether to continue using their business idea from project 1, or switch to a different idea. Encourage groups to come up with a 1-2 sentence statement of purpose ("This pet playdate system will store user information for different pets and allow them to interact by sending each other messages, barking, meowing, or tail wagging. It will also keep track of the petPoints (in-app currency) for each user and allow them to redeem petPoints for treats.")
 
-Once they have a statement of purpose, teams should identify 6 key functions/classes/methods, as well as a basic idea of how those components would be combined to generate the overall functionality. Guide students through setting up their files and determining who will write each unit test and the corresponding function/class. Students should begin the coding process by writing unit tests.
+Once they have a statement of purpose, teams should identify 3 key functions/classes, as well as a basic idea of how those components would be combined to generate the overall functionality. Guide students through setting up their files and determining who will write each unit test and the corresponding function/class. Students should begin the coding process by writing unit tests.
 
 ## Recommended Benchmarks
 
@@ -63,19 +63,19 @@ It's ultimately your choice as the instructor whether to communicate any of thes
 
 ### Statement of Purpose and Key Code Structures
 
-Have students submit their statement of purpose, a list of 6 key functions/classes (name and a docstring that describes the function), and a short paragraph explaining how these code structures will fit together to generate the overall program. A Google form can be a great way to collect this information.
+Have students submit their statement of purpose, a list of 3 key functions/classes (name and a docstring that describes the functionality), and a short paragraph explaining how these code structures will fit together to generate the overall program. A Google form can be a great way to collect this information.
 
 ### Unit Tests
 
-Have students write unit tests for each of their key code structures.
+Have students write unit tests for each of their key code structures. Each student should write at least 1 unit test.
 
 ### Passing the Unit Tests
 
-Have students write code that passes each of the unit tests. 
+Have students write code that passes each of the unit tests. Each student should write code to pass a different student's test.
 
 ### Division of Responsibilities
 
-As with Project 1, this is a good one to do every single day if students are struggling to allocate work equally. Have each student commit to their peers in writing what work they'll do before the next class. For this project, students should evenly divide up the responsibilities for writing unit tests, and each student should write code to pass a different student's unit tests. Emphasize that the process of each student practicing coding in Python and using TDD is more important than the final product. 
+As with Project 1, this is a good one to do every single day if students are struggling to allocate work equally. Have each student commit to their peers in writing what work they'll do before the next class. For this project, students should evenly divide up the responsibilities for writing unit tests and the accompanying code. Emphasize that the process of each student practicing coding in Python and using TDD is more important than the final product. 
 
 ### First Draft Mini-Presentations
 
