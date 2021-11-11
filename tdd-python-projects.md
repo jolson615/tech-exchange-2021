@@ -34,7 +34,7 @@ In the first project, you and your team built a front end website for a potentia
 There are several routes that you can take for creating a back-end python program to support a business:
 * Creating a product management system for a store
 * Creating a social networking program where users can interact with each other (for this project, focus a text-based prototype. A well-written basic framework is relatively easy to transition into a more visual web app if you have rigorous unit testing)
-* Creating a simulator
+* Creating a simulator (for example, a movie theater might use a simulation of patrons in line to buy tickets in order to determine the optimal way to set up the ticket windows)
 * Creating a recommender or matching algorithm (think Netflix show recommendations)
 * [STRETCH] Combining any of the above with an API to expand your project scope
 
@@ -69,9 +69,17 @@ Have students submit their statement of purpose, a list of 6 key functions/class
 
 Have students write unit tests for each of their key code structures.
 
-### Etc...
+### Passing the Unit Tests
 
-Name the benchmark and describe it here. 
+Have students write code that passes each of the unit tests. 
+
+### Division of Responsibilities
+
+As with Project 1, this is a good one to do every single day if students are struggling to allocate work equally. Have each student commit to their peers in writing what work they'll do before the next class. For this project, students should evenly divide up the responsibilities for writing unit tests, and each student should write code to pass a different student's unit tests. Emphasize that the process of each student practicing coding in Python and using TDD is more important than the final product. 
+
+### First Draft Mini-Presentations
+
+Have groups give short presentations to each other on the programs they have written so far. Emphasize that the programs do NOT need to be finished and one of the most important parts of the presentation is outlining "next steps". For groups that finish implementing their basic ideas, this can be a great way to get ideas for stretch goals. 
 
 ## Exemplar
 
