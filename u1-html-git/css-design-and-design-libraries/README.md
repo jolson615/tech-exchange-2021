@@ -122,7 +122,7 @@ There is so much CSS out there and it can be tempting for students to go crazy s
 * padding
 * line-height
 
-As students start planning, the things that can be most confusing are margin and padding (and borders) when styling divs. An easy way to explain is that padding is what goes around the contents INSIDE the div (like padding in a shipping box) and margins are what keep the outer edge of the div away from other elements on the page (like the distance a shipping box is from other shipping containers). Walk students through styling a class or element on their page - this is purely an example and students should have lots of freedom to adjust these styles based on their own preferences, and to explore resources like W3 Schools if there are other things they want to learn about.
+As students start planning, the things that can be most confusing are margin and padding (and borders) when styling divs. An easy way to explain is that padding is what goes around the contents INSIDE the div (like padding or bubblewrap in a shipping box) and margins are what keep the outer edge of the div away from other elements on the page (like the distance a shipping box is from other shipping containers). Walk students through styling a class or element on their page - this is purely an example and students should have lots of freedom to adjust these styles based on their own preferences, and to explore resources like W3 Schools if there are other things they want to learn about.
 
 ```css
 .fav{
@@ -190,7 +190,7 @@ Then, give students another 5-10 minutes to try to edit their work to meet Googl
 
 We've covered a lot, and students may be feeling overwhelmed about how to juggle all of this to make professional, polished looking websites every time. That's to be expected - and they're not alone! People have struggled long before them and have come up with solutions to allow for people to build good looking websites quickly and without having to recode all of these best practice things over and over and over.
 
-Enter CSS Frameworks (sometimes referred to as libraries) which are essentially collections of CSS classes and other styled elements that have been created so that all you, the programmer, needs to do is connect it to your HTML and get coding. Introduce students to **Materialize** and explain that for a quick start, they can just use the CDN by sticking this code in the head of their HTML page:
+Enter CSS Frameworks (sometimes referred to as libraries) which are essentially collections of CSS classes and other styled elements that have been created so that all you, the programmer, needs to do is connect it to your HTML and get coding. Introduce students to **Materialize** and explain that for a quick start, they can just use the CDN (content delivery network - this is what gets you the library quickly!) by sticking this code in the head of their HTML page:
 
 ```html
 <!-- Compiled and minified CSS -->
@@ -224,7 +224,7 @@ Extensions are generally presented in order of difficulty, and should be offered
 * [Google's Front End Style Guide](https://google.github.io/styleguide/htmlcssguide.html) - Large companies like Google have style guides to make sure code and its output are uniform. Do your best to follow these guidelines as you are coding and styling!
 * [w3Schools CSS Tutorials](https://www.w3schools.com/css/default.asp) - written intro to CSS
 
-###CSS Libraries/Frameworks
+### CSS Libraries/Frameworks
 * [Materialize](https://materializecss.com/) - open source CSS framework developed by Google
 * [Bootstrap](https://getbootstrap.com/) - popular CSS framework
 * [Bulma](https://bulma.io/) - a great alternative to Bootstrap
