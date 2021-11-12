@@ -1,12 +1,5 @@
 class Pet:
     '''A class to store information about the different pets from Pawsome Pets'''
+    # Write code here to define the pet class. Check your code by running "python test_pets.py" in your command line. Make sure to scroll up to see error messages.
+    
     pass
-    def __init__(self, name, animal, colors, age):
-        self.name = name
-        self.animal = animal
-        self.colors = colors
-        self.age = age
-        if type(name) != str:
-            raise TypeError("Name must be a string")
-        if type(animal) != str:
-            raise TypeError("Type of animal must be a string")

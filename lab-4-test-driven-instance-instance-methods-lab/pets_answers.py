@@ -16,7 +16,7 @@ class Pet:
         self.animal = animal
         self.colors = colors
         self.age = age
-        self.nickname = 'fluffy wuffy {}ster'.format(self.name[0:3])
+        self.nickname = 'fluffy wuffy {}ster'.format(self.name[0:4])
     def call(self):
         '''Gives the call that the pet most commonly makes as a string. No input.'''
         if self.animal.lower() == "cat":
@@ -29,9 +29,9 @@ class Pet:
             return "glub glub"
         else:
             return "silence"
-    def food(self, weight):
+    def food_amount(self, weight):
         '''Gives the amount of food (in cups) to feed the pet based on weight in pounds.'''
-        # All animals younger than 1 and non-cats/dogs are referred to a vet. All cats older than 1 are give 1/2 cup of food. Dogs under 100 lbs are given cups equal to weight over 100. 
+        # All animals younger than 1 and non-cats/dogs are referred to a vet. All cats older than 1 are give 1/2 cup of food. Dogs under 100 lbs are given cups equal to their weight divided by 20. Dogs over 100 lbs are given 4.5 cups plus an extra quarter cup for each 10 pounds over 100. 
         if self.age < 1:
             return "I am a baby! Check with a vet on how much to feed me"
         elif self.animal == "cat":
@@ -43,6 +43,13 @@ class Pet:
                 return 4.5 + (weight-100)/10*0.25
         else:
             return "Check with a vet on how much to feed me"
-
-pet1 = Pet("Spot", "dog", ["brown", "white"], 7)
-# print(pet1.food(150))
+    def human_age(self):
+        '''Gives the age of the pet in human years'''
+        if self.animal.lower() == "cat":
+            return self.age*6
+        elif self.animal.lower() == "dog":
+            return self.age*7
+        elif self.animal.lower() =="bird":
+            return self.age*10
+        else:
+            return None
