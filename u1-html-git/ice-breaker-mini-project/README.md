@@ -19,7 +19,7 @@
 
 This is the first time students will be working together on a project, and even though it is a mini one, it's a great chance to check-in on their collaboration skills. This project will require an interview, some basic HTML/CSS work, and then a little bit of collaboration to build a homepage/landing page for all of the partner profiles.
 
-If they have class work time, make sure to check-in and ensure that the group members are communicating to each other. The easiest way to do this is to drop into break out rooms and see what students are up to!
+If they have class work time, make sure to check-in and ensure that the group members are communicating with each other. The easiest way to do this is to drop into break out rooms and see what students are up to!
 
 ## What We’re Building <a id="building"></a>
 
@@ -41,7 +41,7 @@ Each group's project must demonstrate each of the following:
 
 ## Launch
 
-Split students into groups of ~3 (bump up to 4 or down to 2 if you absolutely must) and tell them that their goal is to get to know each other better. Each person must conduct an interview of another group member and must ask them at least 5, but as many questions as possible in 3 minutes, and take notes on their responses. Students can use whatever questions they'd like or you can provide some lists to pick from:
+Split students into groups of ~3 (bump up to 4 or down to 2 if you absolutely must) and tell them that their goal is to get to know each other better. Each person must conduct an interview of another group member and must ask them at least 5, but as many questions as possible in 5 minutes, and take notes on their responses. If you are in a group with an odd number, the student not asking/being interviewed should scribe for the other two (and then roles will swap). Students can use whatever questions they'd like or you can provide some lists to pick from:
 
 **The Basic Questions**
 * What's your middle name?
