@@ -252,7 +252,11 @@ def genre_view(genre):
 ```
 
 #### Helpful Questions
-* As many as needed
+* When should you use a Jinja for loop rather than hard-coding part of your template?
+    When a similar component is repeated several times.
+
+* What determines the route the links redirect to?
+    The genre is interpolated into the hypertext reference of the anchor tag.  This redirects app.py to the <genre> route.
 
 
 ### Flask Form Methods
