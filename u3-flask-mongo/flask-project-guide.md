@@ -1,4 +1,4 @@
-# Final Project Mode
+# Flask Project Guide
 
 1. [Context](#context)
 2. [Objectives](#objectives)
