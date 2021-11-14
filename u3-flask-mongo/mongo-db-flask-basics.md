@@ -118,6 +118,7 @@ After you have experimented with these queries, replace them with: 'books = coll
 This will render your full list of recommended books on index.html
 
 Note that the render template in your index() function passes the variable 'books' into index.html, where a Jinja for loop populates a list:
+    
     {% for book in books %}
         <li>{{ book.title }} by {{ book.author }}</li>
     {% endfor %}
