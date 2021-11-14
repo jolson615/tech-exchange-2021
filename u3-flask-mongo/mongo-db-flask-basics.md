@@ -27,6 +27,7 @@ Change directory (cd) into the 'flask-mongo-template' file
 Type 'flask --version' in your terminal to confirm that flask is installed.  If it isn't, run 'pip3 install flask' to install flask.
 
 Copy the following into your terminal to configure your flask app:
+
     export FLASK_APP=app.py
     export FLASK_DEBUG=1
 
@@ -46,6 +47,7 @@ Open the file seed_library.py.  This contains a list of dictionaries, each repre
 To do that, we'll need to connect our Flask app to MongoDB.
 
 Open app.py and uncomment 'from flask_pymongo import PyMongo'.  This likely raises an error, as you don't have flask_pymoongo installed in your workspace to resolve this, run the following in your terminal:
+
     pip3 install flask-pymongo  --user
     pip3 install dnspython --user
 
