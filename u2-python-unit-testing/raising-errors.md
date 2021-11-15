@@ -29,16 +29,16 @@ Students will need to create a folder in their development environment to hold t
 
 ## Launch
 
-Let’s play Break the function.  Edit any element of broken_function except its name.  Call it with any arguments you choose.  The goal is to get your development environment to throw as many different errors as you can in the time frame.
+Let's play Break the function.  Edit any element of broken_function except its name.  Call it with any arguments you choose.  The goal is to get your development environment to throw as many different errors as you can in the time frame.
 
-```PYTHON
+```python
 def broken_function(string, integer):
 return None
 ```
 
 Discuss the errors you discover.  What do the error messages you read tell you about how Python functions work?
 
-In today’s lesson we are going to crowdfund our own board game, but to do so we need to figure out how many backers we will need in order to break even.  We are going to develop cost estimates using a series of functions.  To ensure these functions work as intended, we will follow the principles of Test Driven Development.  Our approach will be similar to playing break the function, except instead of trying to cause errors, we think about what errors are possible and plan to account for them.  We can’t prevent all errors, but proper error handling can make errors easier to detect, so that they can be resolved efficiently.
+In today's lesson we are going to crowdfund our own board game, but to do so we need to figure out how many backers we will need in order to break even.  We are going to develop cost estimates using a series of functions.  To ensure these functions work as intended, we will follow the principles of Test Driven Development.  Our approach will be similar to playing break the function, except instead of trying to cause errors, we think about what errors are possible and plan to account for them.  We can't prevent all errors, but proper error handling can make errors easier to detect, so that they can be resolved efficiently.
 
 ## The Lesson
 
@@ -64,12 +64,12 @@ In order to write a test for our funding calculator function we need to know its
 
 We are going to test this function for three things:
 * Accurate calculations (does it provide the correct output)
-* Acceptable range of argument valuers (we don’t want to have -1 backers)
+* Acceptable range of argument valuers (we don't want to have -1 backers)
 * Acceptable type of arguments (backers and unit_cost should both be numbers)
 
 Add the tests below to your test_profit_calculator.py.  Then write a caculate_funding() function that passes all of these tests.
 
-```PYTHON
+```python
 import unittest
 from profit_calculator import calculate_funding
 
@@ -92,24 +92,24 @@ class TestProfitCalculator(unittest.TestCase):
 #### Helpful Questions
 Why are we writing tests at all?  What makes this worth the time?
 * Code is less likely to throw unexpected or unnoticed errors
-* You develop as strong understanding of a code’s purpose before writing it, leading to more focused development
+* You develop as strong understanding of a code's purpose before writing it, leading to more focused development
 * You are encouraged to write small, self-contained segments of code
 
-What’s the difference between ValueError and TypeError?  Do you always need both?
+What's the difference between ValueError and TypeError?  Do you always need both?
 * TypeError is common, as arguments almost always are limited in acceptable type
 * ValueErrors are only needed when there is a limited acceptable range of arguments of the correct type (eg only nonnegative numbers)
 
 ### Raising Errors
 If your calculate_funding looks like the snippet below, you are probably failing to raise value and type errors:
 
-```PYTHON
+```python
 def calculate_funding(backers, unit_cost):
     total = backers * unit_cost
     return total
 ```
-To resolve this, we need to Raise Errors when unexpected values or data types are passed into this function as arguments.  We can do this by introducing a conditional to calculate_funcing().  It’s also best practice to include a docstring on the first line of the function wrapped in triple quotation marks.  This docstring explains the function’s specifications.  Most IDEs display a function’s docstring as a popup tooltip when you write the name of the function.
+To resolve this, we need to Raise Errors when unexpected values or data types are passed into this function as arguments.  We can do this by introducing a conditional to calculate_funcing().  It's also best practice to include a docstring on the first line of the function wrapped in triple quotation marks.  This docstring explains the function's specifications.  Most IDEs display a function's docstring as a popup tooltip when you write the name of the function.
 
-```PYTHON
+```python
 def calculate_funding(backers, unit_cost):
     '''Returns the funding total (float) given a number of backers and cost per unit'''
     if type(backers) not in [int,float]:
@@ -121,8 +121,8 @@ def calculate_funding(backers, unit_cost):
 ```
 
 #### Helpful Questions
-Why raise these errors at all?  Won’t they come up on their own if there is a problem.
-* Some errors may go unnoticed.  For example, its possible to multiply a string by an integer (though rarely desirable).  It’s preferable to always catch errors.
+Why raise these errors at all?  Won't they come up on their own if there is a problem.
+* Some errors may go unnoticed.  For example, its possible to multiply a string by an integer (though rarely desirable).  It's preferable to always catch errors.
 * You can customize your error message to allow for more accurate tracing.
 Why add doc strings to a function?
 * Doc strings allow other developers to use functions you create more effectively
@@ -137,11 +137,11 @@ Function specifications:
 * Calculations:
     * Add a fixed advertising cost of $500
     * Add the crowdfunding site fee: 5% of your funding total
-    * Add the fulfillment service’s fee: 5% of your funding total (to handle all the * shipping etc)
+    * Add the fulfillment service's fee: 5% of your funding total (to handle all the * shipping etc)
     * Return the sum of these three values (float)
 
 test_profit_calculator.py:
-```PYTHON
+```python
     def test_campaign_cost_calculator(self):
         #test accuracy of calculations
         self.assertAlmostEqual(calculate_campaign_costs(10000),1500.0)
@@ -156,7 +156,7 @@ test_profit_calculator.py:
 ```
 
 profit_calculator.py:
-```PYTHON
+```python
 def calculate_campaign_costs(funding_total):
     '''Calculates the advertising costs, site fees, and fulfillment costs of a given funding total'''
     advertising_costs = 500
@@ -180,10 +180,10 @@ Function Specifications
 * Calculations:
 * Add a printing fee of $1000 plus $10 per unit
 * Add a shipping fee of $250 plus $2 per unit
-* Add the fulfillment service’s fee: 5% of your funding total (to handle all the * shipping etc)
+* Add the fulfillment service's fee: 5% of your funding total (to handle all the * shipping etc)
 * Return the sum of these three values (float)
 
-```PYTHON
+```python
     def test_printing_cost_calculator(self):
         #test accuracy of calculations
         self.assertAlmostEqual(calculate_printing_costs(1000),13250.0)
@@ -206,7 +206,7 @@ def calculate_printing_costs(units):
 #### Helpful Questions
 Why should printing costs have a separate function from the campaign costs?
 * They have different parameters (funding vs units).
-* There are times you may want to find one and not the other (if you have another * campaign for a digital good, you won’t need to find print costs)
+* There are times you may want to find one and not the other (if you have another * campaign for a digital good, you won't need to find print costs)
 * It is easier to write tests for simpler functions
 
 ## Extensions

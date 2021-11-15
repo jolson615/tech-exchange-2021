@@ -20,15 +20,15 @@ Now, students can integrate these skills and collaboratively produce an exciting
 * SW work in teams to create something they're proud of!
 
 ## Teaching Tips
-The most common challenge that student groups face here is taking on more than they are ready for and then producing a hairball of code that doesn’t work but is too complicated to debug. Often it means starting over, which can be stressful toward the end of project mode.
+The most common challenge that student groups face here is taking on more than they are ready for and then producing a hairball of code that doesn't work but is too complicated to debug. Often it means starting over, which can be stressful toward the end of project mode.
 
-To prevent this from happening, explain to students the concept of a Minimum Viable Product (MVP). Before starting to code, students should map out what their ideal final product would look like, and they should also design an MVP version that they can code faster (within about half the total time they have for the project). Their MVP should be a working version of what they ultimately want to do, with basic functionality. An example MVP would be a web app that doesn’t yet have styling in Bootstrap, only has one route instead of five, or has hard-coded values in Python instead of being connected to a Mongo database. At any point in the coding process, students should have something that works - even if it doesn’t have all the functionality they ultimately want. This is more effective than writing all the code and then testing later, only to find out it’s too complicated to debug.
+To prevent this from happening, explain to students the concept of a Minimum Viable Product (MVP). Before starting to code, students should map out what their ideal final product would look like, and they should also design an MVP version that they can code faster (within about half the total time they have for the project). Their MVP should be a working version of what they ultimately want to do, with basic functionality. An example MVP would be a web app that doesn't yet have styling in Bootstrap, only has one route instead of five, or has hard-coded values in Python instead of being connected to a Mongo database. At any point in the coding process, students should have something that works - even if it doesn't have all the functionality they ultimately want. This is more effective than writing all the code and then testing later, only to find out it's too complicated to debug.
 
-While students are working, make sure to visit each project group. Ask them to share their mockups and to tell you which parts they’re working on at a given moment. Ask about a recent debugging success they had. Ask if there’s something they want help on. Ask how the students have organized the work: is one person doing the front end while another does the back end? Are they pair programming? Many styles of collaboration work, as long as everyone in the group is in agreement on how the collaboration should go.
+While students are working, make sure to visit each project group. Ask them to share their mockups and to tell you which parts they’re working on at a given moment. Ask about a recent debugging success they had. Ask if there's something they want help on. Ask how the students have organized the work: is one person doing the front end while another does the back end? Are they pair programming? Many styles of collaboration work, as long as everyone in the group is in agreement on how the collaboration should go.
 
 ## What We’re Building
 
-You’ll be building a web application that enables users to interact with a Python back end and a Mongo database. The key here is interaction: the user’s experience should depend on choices that the user has made. Here are some options for your final project:
+You’ll be building a web application that enables users to interact with a Python back end and a Mongo database. The key here is interaction: the user's experience should depend on choices that the user has made. Here are some options for your final project:
 * Something fun and quirky, like a virtual escape room or an app that lets people share their favorite jokes
 * Something that improves the world, like a dog adoption app or a platform for sharing climate protest information
 * Something practical, like a scheduling app or an investment tracker
@@ -50,13 +50,13 @@ Ask student groups to begin by coming up with ideas. Ask them to write down at l
 
 Once they’ve settled on an idea, they should NOT start coding immediately. Instead, they should map out their ideas in a Google doc or drawing, with a preliminary mock-up of the final web app. They should also define their MVP (versus later nice-to-have functionality) and lay out the steps they’ll need to complete to get their MVP working.
 
-After you approve their plan, help them create a new GitHub repository, add everyone in the team as collaborators, and then clone it down. Note: it will behoove students to use the same Flask template they have been using for the past few classes. They can choose “use this template” in GitHub and then clone it down.
+After you approve their plan, help them create a new GitHub repository, add everyone in the team as collaborators, and then clone it down. Note: it will behoove students to use the same Flask template they have been using for the past few classes. They can choose "use this template" in GitHub and then clone it down.
 
-Students have a lot of time to work on this project - by design. It’s worth taking the time to set it up well so that their time spent working is fruitful and results in a web app of which they are proud.
+Students have a lot of time to work on this project - by design. It's worth taking the time to set it up well so that their time spent working is fruitful and results in a web app of which they are proud.
 
 ## Recommended Benchmarks
 
-It can be helpful (though not required) to have students report their status at the end of class. Students should generate their own internal group deadlines, such as “By this date we’ll finish the code where the input into the form gets saved in the database.” Make sure that students are on track for an MVP - that is, their code is testable at all times and they continue to build on a working site rather than expecting it to work down the line without testing along the way.
+It can be helpful (though not required) to have students report their status at the end of class. Students should generate their own internal group deadlines, such as "By this date we’ll finish the code where the input into the form gets saved in the database." Make sure that students are on track for an MVP - that is, their code is testable at all times and they continue to build on a working site rather than expecting it to work down the line without testing along the way.
 
 In addition, students should be writing and running unit tests throughout the coding process. Ask students to share their unit tests with you, and ask them what makes them confident that they’ve captured a complete set of possible use cases.
 

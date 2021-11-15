@@ -60,7 +60,7 @@ To allow the user to navigate to this book view, you will need to incorporate a 
 
     <li><a href='/book/{{ book._id }}'>{{ book.title }}</a> by {{ book.author }
 
-```PYTHON
+```python
 # -- Import section --
 from bson.objectid import ObjectId
 
@@ -74,7 +74,7 @@ def book_view(bookID):
     return render_template('book.html', book = book)
 ```
 
-```HTML
+```html
       <!-- index.html -->
       <div class="book-list">
         <ul>
@@ -118,7 +118,7 @@ Like creating a new entry, updating entries in Flask requires a POST method.  Cr
 
 In book.html, create a conditional that shows users the image for entries that have an image property and an 'Add Image' button for entries that don't
 
-```PYTHON
+```python
 # ADD IMAGE Route
 @app.route('/book/<bookID>/add_image', methods=['GET', 'POST'])
 def add_image(bookID):
@@ -142,7 +142,7 @@ def add_image(bookID):
 
 ```
 
-```HTML
+```html
     <!-- book.html -->
     {% if book.image %}
         <img src='{{ book.image }}'/>
@@ -189,7 +189,7 @@ If the username is not already in use in the database, this route will add a new
 
 You can test this route by entering '/signup' in the navigation bar.  If the signup is successful, you should be able to view the new user on MongoDB.
 
-```PYTHON
+```python
 # -- Import section --
 import secrets
 # -- Session data --
@@ -224,7 +224,7 @@ def singup():
         return render_template('signup.html')
 ```
 
-```HTML
+```html
 <!-- signup.html -->
 <!DOCTYPE html>
 <html lang="en">
@@ -273,7 +273,7 @@ It's not very user-friendly to have users type /login and /logout manually in th
 
 Add your login and logout routes to app.py, then consider where on your html templates it would be useful to have conditional information based on your login state.
 
-```PYTHON
+```python
 # -- Routes section --
 #LOGIN Route
 @app.route('/login', methods=['GET', 'POST'])
@@ -307,7 +307,7 @@ def logout():
     return redirect('/')
 ```
 
-```HTML
+```html
 <!-- login.html -->
 <!DOCTYPE html>
 <html lang="en">
@@ -350,7 +350,7 @@ If there is any session data, find all books in the database created by the curr
 
 Finally, add a link on index.html allowing users to view their own recommended books.
 
-```PYTHON
+```python
 #MYBOOKS Variable Route
 @app.route('/mybooks')
 def my_books():
@@ -365,7 +365,7 @@ def my_books():
     return render_template('index.html', books = books, genres = genres)
 
 ```
-```HTML
+```html
     <!-- index.html -->
       {% if session %}
         <p>Logged in as {{ session['username'] }}</p>

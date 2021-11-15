@@ -55,7 +55,7 @@ Next, we'll need to configure the Flask app.  Replace <your-connection-string> w
 
 Now run your app using 'flask run'.  If your database is connected, you will see a new collection in your database on mongodb.com
 
-```PYTHON
+```python
 # -- Import section --
 from flask import Flask
 from flask import render_template
@@ -123,7 +123,7 @@ Note that the render template in your index() function passes the variable 'book
         <li>{{ book.title }} by {{ book.author }}</li>
     {% endfor %}
 
-```PYTHON
+```python
 #app.py 
 
 # -- Routes section --
@@ -159,7 +159,7 @@ This route function will be called genre_view() and it has one parameter: the ge
 
 Complete the genre route and try it out by adding the name of a genre to the url slug, for example: http://127.0.0.1:5000/fantasy
 
-```PYTHON
+```python
 # -- Routes section --
 # INDEX Route
 @app.route('/')
@@ -205,7 +205,7 @@ We are already importing a list of genres from model.py.  We can use those to po
 
 But this is very repetitive and time-consuming to update.  It's much better to generate the links using a Jinja for loop, as shown below.
 
-```PYTHON
+```python
 # -- Routes section --
 # INDEX Route
 @app.route('/')
@@ -226,7 +226,7 @@ def genre_view(genre):
 
 ```
 
-```HTML
+```html
 <!doctype html>
 <html>
     <head>
@@ -267,7 +267,7 @@ Our app now allows the user to filter results from the database using links.  Ho
 
 We're going to create a route.  Try out the code below then navigate to '/new' and try submitting the form.
 
-```PYTHON
+```python
 # NEW BOOK Route
 @app.route('/new')
 def new_book():
@@ -284,7 +284,7 @@ Revise the new route in app.py and try submitting a few books using the provided
 
 Congratulations, you have built a full stack application!
 
-```PYTHON
+```python
 # NEW BOOK Route
 @app.route('/new', methods=['GET', 'POST'])
 def new_book():

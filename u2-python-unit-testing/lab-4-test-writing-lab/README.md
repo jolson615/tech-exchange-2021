@@ -49,7 +49,7 @@ Open calculator.py and test_calculator.py. You will need to write unit tests in 
 ### Function 6: Scrabble Word Value
 * The scrabble_value function should take in a word as a string and return the value of that word in scrabble tiles (tile values are given in the letter_value dictionary in scrabble.py). Write unit tests to check the accuracy of the scrabble_value function
 * Write unit tests to check that a type error is raised when an input is not a string
-* Write unit tests to check that a value error is raised when the word length is impossible
+* Write unit tests to check that a valxue error is raised when the word length is impossible
 * Edit the scrabble_value function in order to pass all tests
 
 ### Function 7: Taxi Cost Estimator
@@ -63,12 +63,12 @@ Open calculator.py and test_calculator.py. You will need to write unit tests in 
 * Edit the scientific_notation function in order to pass all tests
 
 ### Function 9: Getting Numbers from the User
-* The get_numbers function should ask the user to input two different numbers and return those numbers as a list of numbers, which can be input into one of the previously-defined functions. Right now it's not working properly with the otehr functions. Write unit tests to check the accuracy of the get_numbers function
+* The get_numbers function should ask the user to input two different numbers and return those numbers as a list of numbers, which can be input into one of the previously-defined functions. Right now it's not working properly with the other functions. Write unit tests to check the accuracy of the get_numbers function
 * Write unit tests to check that a type error is raised when the input type is incorrect
 * Edit the get_numbers function in order to pass all tests
 
 ### Function 10: Getting Numbers from the User
-* The get_numbers function should ask the user to input two different numbers and return those numbers as a list of numbers, which can be input into one of the previously-defined functions. Right now it's not working properly with the otehr functions. Write unit tests to check the accuracy of the get_numbers function
+* The get_numbers function should ask the user to input two different numbers and return those numbers as a list of numbers, which can be input into one of the previously-defined functions. Right now it's not working properly with the other functions. Write unit tests to check the accuracy of the get_numbers function
 * Write unit tests to check that a type error is raised when the input type is incorrect
 * Edit the get_numbers function in order to pass all tests
 

@@ -35,9 +35,9 @@ However, if students really struggled to catch up, or if it's important to revie
 
 ## Launch
 
-This lesson is a bit of a grab bag - lots of small tools to help supercharge a Flask application. It's a little challenging to launch something like that meaningfully, because the through like is just "ways to make your application better," but if you ask students what features they want, they're most likely to ask for features like account creation, logging in and out, storing/saving your personal data, and social features like posting and following. 
+This lesson is a bit of a grab bag - lots of small tools to help supercharge a Flask application. It's a little challenging to launch something like that meaningfully, because the through line is just "ways to make your application better," but if you ask students what features they want, they're most likely to ask for features like account creation, logging in and out, storing/saving your personal data, and social features like posting and following. 
 
-So the best way to launch this lesson is to decide ahead of time what you think is most important and then plan to launch with exactly that - your rationale. If you found the blocks which essentially allow you to componentize your code to be compelling, show students a website with repeated elements and ask them why it would be irritating to need to rewrite code (like a navbar) that appears across multiple pages. As a bonus could even demo instances where a website's navbar is inconsistent across pages to emphasize writing DRY (don't repeat yourself) code isn't just about saving time, it's about avoiding mistakes. 
+So the best way to launch this lesson is to decide ahead of time what you think is most important and then plan to launch with exactly that - your rationale. If you found the blocks which essentially allow you to componentize your code to be compelling, show students a website with repeated elements and ask them why it would be irritating to need to rewrite code (like a navbar) that appears across multiple pages. As a bonus, you could even demo instances where a website's navbar is inconsistent across pages to emphasize writing DRY (don't repeat yourself) code isn't just about saving time, it's about avoiding mistakes. 
 
 If the forms library (or really any library) supercharged your code, show them before and after pics of your code and explain why you like it, and then promise students to walk them through the steps. 
 
@@ -70,7 +70,7 @@ If you look at the HTML template that's pre-built into the template we used, you
 </html>
 ```
 
-As you well know, the `../static/css/style.css` means go up one directory, then locate the static folder, then locate the style folder, and then find the stylesheet called `styles.css`. 
+As you well know, the `../static/css/style.css` means go up one directory, then locate the static folder, then locate the style folder, and then find the stylesheet called `style.css`. 
 
 #### Using `url_for`
 
@@ -195,8 +195,8 @@ You can also accomplish other tasks you might use a list for, but just know that
 
 #### Helpful Questions
 * What happens if you try a regular `len()` method here?
-* As you may remember, the tool that handles templates for Flask is called **jinja2**. What are the major syntax differences you are noticing between how Python usually works and how it works here?
-* Are you noticing the difference between how the jinja2 templating engine uses `{{ }}` and `{% %}`? What is the difference?
+* As you may remember, the tool that handles templates for Flask is called **Jinja**. What are the major syntax differences you are noticing between how Python usually works and how it works here?
+* Are you noticing the difference between how the Jinja templating engine uses `{{ }}` and `{% %}`? What is the difference?
 
 > Note: this last bit is important, and it's helpful to have a plainwords explanation for both markers:
 > * `{{ }}` means "evaluate this Python expression and display the result on the page."
@@ -280,6 +280,8 @@ Notice that this basically just fills in the blanks from the base template.
 * The `block title` in the base template had the phrase "Geography Quiz!" in it. Since we've included the title block here, that original string will be overwritten with the "Welcome to the Geography Quiz!" that's included here. 
 * The `block body` in the base template had nothing in it, so the content we've included here will get added to the base template before it's rendered. 
 
+To really see the full effect, demonstrate how we can use the "inspect" tool on our preview to see that the finished product is just HTML. This step is important, as it's often difficult to conceptualize what HTML is going to be generated, and therefore very hard to debug what goes wrong without seeing the output. 
+
 In order to get any real benefit from the base template, we really do need to use it twice, so here's what our `scorepage.html` page would look like if it were refactored to extend the base page. 
 
 ```html
@@ -351,7 +353,7 @@ This code is really simple, and it allows us to account for some unintended (but
 
 #### Helpful Questions
 * When have you encountered redirects in your own web browsing?
-* Do you generally find redirects to be helpful for frustrating?
+* Do you generally find redirects to be helpful or frustrating?
 
 ## Extensions
 
@@ -367,5 +369,5 @@ Try each of the following for the Flask application you're currently working on:
 ## Related Resources
 
 * [Flask Documentation](https://flask.palletsprojects.com/en/2.0.x/) - The best place to learn Flask is right at the source. The documentation has detailed explanations about how everything here works. 
-* [Flask Macros](https://uniwebsidad.com/libros/explore-flask/chapter-8/creating-macros) - If you're familiar with the React style of creating pages out of component parts, macros could scratch that exact itch for you. 
+* [Flask Macros](https://uniwebsidad.com/libros/explore-flask/chapter-8/creating-macros) - If you're familiar with concept of creating pages out of component parts (as in React.js), macros could scratch that exact itch for you. Macros let you write small functions that Jinja can use to generate small chunks of HTML. This is  useful if you have a small element that you want to appear on many (but not all) pages in your web application.
 * [The Flask Mega-Tutorial](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world) - If you want a super-comprehensive exploration of Flask that doesn't even start with a template, this is a really great place to start. The code is a little out of date, but the core concepts are the same. It will take a long time to work through, but you'll emerge on the other side with a pretty comprehensive understanding of how Flask works. 

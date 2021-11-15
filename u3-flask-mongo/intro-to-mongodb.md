@@ -90,7 +90,7 @@ Create a new python file named languages.py.  You will need to import PyMongo an
 
 Run the file by typing 'python3 languages.py' in your terminal.
 
-```PYTHON
+```python
 import pymongo
 
 client = pymongo.MongoClient("mongodb+srv://<username>:<password>@cluster0.0nsou.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
@@ -109,7 +109,7 @@ Now you're going to add some programming languages to this collection.  The data
 
 The first PyMongo method is .insert_one.  Insert three programming languages to your collection following the example below.
 
-```PYTHON
+```python
 import pymongo
 
 #mongo client connection
@@ -149,7 +149,7 @@ Including an empty pair of curly brackets as the argument for the find method wi
 
 Keep in mind that Python accesses these entries as dictionaries, so you can reference specific values in the same way you would a dictionary.
 
-```PYTHON
+```python
 #return all entries in the collection
 all_langs = langs.find({})
 #print each entry

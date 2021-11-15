@@ -1,4 +1,4 @@
-# Python Basics
+# Python Essentials
 
 1. [Context](#context)
 2. [Objectives](#objectives)
@@ -11,9 +11,9 @@
 ## Context
 
 ### Why Python?
-In our last unit, we used HTML/CSS to build front end products: that is, something that users can see and interact with directly. Now, we’re going to be learning Python, which is commonly used to program the back end of web apps: the internal logic that users don’t see (think the Netflix algorithm that decides which shows to recommend you). Python is a high-level object-oriented programming language with several features that make it accessible to beginners.  It’s also among the most popular and in-demand languages. For example, Netflix, Instagram, and Spotify are all coded using Python. Python is used for web development, especially for managing a backend database using frameworks like Django or Flask.  Python is commonly used in data analysis and visualization, especially in medicine and financial services.
+In our last unit, we used HTML/CSS to build front end products: that is, something that users can see and interact with directly. Now, we’re going to be learning Python, which is commonly used to program the back end of web apps: the internal logic that users don't see (think the Netflix algorithm that decides which shows to recommend you). Python is a high-level object-oriented programming language with several features that make it accessible to beginners.  It's also among the most popular and in-demand languages. For example, Netflix, Instagram, and Spotify are all coded using Python. Python is used for web development, especially for managing a backend database using frameworks like Django or Flask.  Python is commonly used in data analysis and visualization, especially in medicine and financial services.
 
-Python was designed to be highly readable: the syntax is relatively simple, keywords are intuitive (and, or, try, etc), and the use of whitespace means that code is consistently formatted.  Python also has strong documentation and an active community.  It’s very likely that a stack overflow search for a Python question will yield multiple relevant results.  Finally, Python supports a large number of libraries that extend its functionality.
+Python was designed to be highly readable: the syntax is relatively simple, keywords are intuitive (and, or, try, etc), and the use of whitespace means that code is consistently formatted.  Python also has strong documentation and an active community.  It's very likely that a stack overflow search for a Python question will yield multiple relevant results.  Finally, Python supports a large number of libraries that extend its functionality.
 
 ### Goals of this Unit
 We will be using Python to develop projects that use the Cloud Shell (or local IDE) command line for user interaction.  The unit will focus on three main topics: Python Syntax (how to type Python code), Object Orientation (how to organize Python code), and Test Driven Development (how to leverage unit tests to plan and assess Python code).
@@ -21,7 +21,7 @@ We will be using Python to develop projects that use the Cloud Shell (or local I
 The concepts and skills practiced in the unit will directly apply to the following unit, where we will combine our knowledge of python and HTML to build full stack applications.
 
 ### Embrace Errors
-Working with the Python command line, students will see frequent errors.  It’s important to frame this ahead of the lesson: errors are a way for your development environment to give you feedback on what your code is doing.  We will learn a lot about how data types and functions work by carefully reading the error messages in our console.  Responding to errors (and eventually anticipating them) is an important part of learning to code in Python, rather than a sign that you are on the wrong track.
+Working with the Python command line, students will see frequent errors.  It's important to frame this ahead of the lesson: errors are a way for your development environment to give you feedback on what your code is doing.  We will learn a lot about how data types and functions work by carefully reading the error messages in our console.  Responding to errors (and eventually anticipating them) is an important part of learning to code in Python, rather than a sign that you are on the wrong track.
 
 ## Objectives
 * SW initialize variables with floats, integers, booleans, and strings.
@@ -43,7 +43,7 @@ The goal of the lesson is to develop a state capitals quiz using the command lin
 ### Variables
 To initialize a variable in Python, you write the variable name, an equals sign, and the value you want to assign to it.  Following the example below, create another state profile by initializing variables and assigning them values.
 
-```PYTHON
+```python
 state_name = "Massachusetts"
 state_capital = "Boston"
 state_population = 7033469
@@ -72,7 +72,7 @@ Python has a built-in function named print() that displays values to the console
 
 To display the value of a variable to the console, type:
 
-```PYTHON
+```python
 print(state_name)
 print(state_population)
 ```
@@ -82,7 +82,7 @@ Use + to combine strings (called concatenation).
 Use , to separate multiple values to be printed.
 Use the keyword f to format other data types into a string, nesting values within {}
 
-```PYTHON
+```python
 print("State Name: " + state_name)
 print("State Population: ", state_population)
 print(f"The state of {state_name} has {state_population} residents")
@@ -99,13 +99,13 @@ There are many possibilities.  Common errors include attempting to concatenate a
 ### Data Types and Casting
 
 Python has another built in function named type() which outputs the datatype of a value.
-```PYTHON
+```python
 print(type(state_name))
 print(f"The variable state_population is a {type(state_population)}")
 ```
 Identify which data types we have seen so far.  There may be instances where you want to change the datatype of a value.  For example, turning an integer into a string to print it or turning a float into an integer.  Changing the data type of a value is called casting.
 
-```PYTHON
+```python
 zipcode = "02101"
 numeric_zipcode = int(zipcode)
 print("The variable state_population is " + str(state_population))
@@ -122,7 +122,7 @@ List methods are a set of specialized functions that act on lists.  A few exampl
 * .pop() removes an element from the list (either from the end or from a specified index)
 * .sort() sorts the list
 
-```PYTHON
+```python
 largest_states = ["Alaska", "Texas", "California", "Montana", "New Mexico"]
 print(largest_states)
 print(type(largest_states))
@@ -155,9 +155,9 @@ What are the risks of accessing states and capitals in two lists?
 Since there is no relationship between the two lists, changes in one list are not reflected in the other.  Sorting or editing the lists would throw off all the data. We will need another data type that is able to preserve the state/capital relationship.
 
 ### For Loops and Conditionals
-In order to print every element in our list of the most populous states, we needed to write repetitive code.  This goes against a principle of effective coding: to write DRY (don’t repeat yourself) code.  One way to more efficiently iterate through the elements of a list is with for loops.
+In order to print every element in our list of the most populous states, we needed to write repetitive code.  This goes against a principle of effective coding: to write DRY (don't repeat yourself) code.  One way to more efficiently iterate through the elements of a list is with for loops.
 
-```PYTHON
+```python
 largest_states = ["Alaska", "Texas", "California", "Montana", "New Mexico"]
 for state in largest_states:
 	print(state)
@@ -165,7 +165,7 @@ for state in largest_states:
 
 For loops are also useful for accessing integers in a given range.
 
-```PYTHON
+```python
 for num in range(100):
 	print(num)
 
@@ -175,7 +175,7 @@ for num in range(100,1000,5):
 
 When iterating through a list with a for loop, you may not want to access every value the same way.  Conditional statements (if, else, elif) become very useful in this context.
 
-```PYTHON
+```python
 population_counts = [	39538223, 29145505, 21538187, 20201249, 13002700, 12812508, 11799448, 10711908, 10439388, 10077331, 9288994, 8631393]
 for count in population_count:
 	If count > 30000000:
@@ -205,7 +205,7 @@ for num in range(100,1,-1):
 ### Dictionaries
 Dictionaries are a changeable data type that stores data as key value pairs.  Like lists, dictionaries are ordered (as of Python version 3.7).  Dictionary keys must be of an immutable type (integer, string, boolean, float) but strings are the most common.  Dictionary values may be of any data type.  Key value pairs are matched with a colon and each pair is separated by a comma.
 
-```PYTHON
+```python
 largest_states_dict = {
 "Alaska" : 665384.04,
 "Texas" : 268596.46,
@@ -230,11 +230,11 @@ You might prefer to use a list to store many similar properties (e.g. months in 
 ### Functions
 So far, the code we have written has run more or less linearly.  The potential for this type of program is limited.  Functions allow us to write code that executes only when called and can be easily repeated.
 
-Functions are defined using the keyword def, followed by the function name, immediately followed by a pair of parenthesis.  Any values that are passed into the function are placed between the parentheses.  These are the function’s parameters.  The above function has one required parameter (called this_list) though functions may have none or several (separated by commas).
+Functions are defined using the keyword def, followed by the function name, immediately followed by a pair of parenthesis.  Any values that are passed into the function are placed between the parentheses.  These are the function's parameters.  The above function has one required parameter (called this_list) though functions may have none or several (separated by commas).
 
 Functions often have a return value, which can be assigned to a variable.  For example:
 
-```PYTHON
+```python
 numbers_list = [0, 1000, -50, 22, 333]
 
 def sum_values(this_list):
@@ -249,11 +249,11 @@ sum_of_list = sum_values(numbers_list)
 print("Sum of List: ", sum_of_list)
 ```
 
-We are going to need at least two functions for our state capitals quiz: one to select a random state from our dictionary and another to compare a user guess to the random state’s capital.
+We are going to need at least two functions for our state capitals quiz: one to select a random state from our dictionary and another to compare a user guess to the random state's capital.
 
-To select random keys from our dictionary, we will need to import a Python library named random, specifically the method random.choice().  The use of libraries is a common way to extend Python’s features.  Although dictionaries are ordered in Python, you cannot index them as easily.  One way around this is to cast the keys into a list when you are selecting them at random.
+To select random keys from our dictionary, we will need to import a Python library named random, specifically the method random.choice().  The use of libraries is a common way to extend Python's features.  Although dictionaries are ordered in Python, you cannot index them as easily.  One way around this is to cast the keys into a list when you are selecting them at random.
 
-```PYTHON
+```python
 import random
 
 states_dict = {
@@ -271,9 +271,9 @@ return state
 print(random_state())
 ```
 
-To gather input from the user, we need to use the built-in function input() which is the inverse of print().  input() allows you to take in a string from the command line and assign it to a variable in your code.  Providing a string argument to the input function provides the user a prompt on the command line to respond to.  This highly specific function isn’t very flexible.  Try using it as a template to define a function that asks the user to guess the capital of a given state.
+To gather input from the user, we need to use the built-in function input() which is the inverse of print().  input() allows you to take in a string from the command line and assign it to a variable in your code.  Providing a string argument to the input function provides the user a prompt on the command line to respond to.  This highly specific function isn't very flexible.  Try using it as a template to define a function that asks the user to guess the capital of a given state.
 
-```PYTHON
+```python
 def guess_the_population_of_alaska():
 	"""Compares a user input to the population of Alaska"""
 	pop = states_dict["Alaska"]
@@ -289,7 +289,7 @@ Functions without a return statement return None.
 Which built in functions [print(), input(), len()] return a value and which do not?
 Input and len have a return value but print does not, as its primary function is to display information to the console.
 When should a function have a return statement?
-When you want to store or otherwise reference the function’s output.
+When you want to store or otherwise reference the function's output.
 
 ### State Capitals Quiz
 We are going to use our knowledge of Python dictionaries and functions to create a state capitals quiz game.
@@ -297,11 +297,11 @@ We are going to use our knowledge of Python dictionaries and functions to create
 To develop the game:
 Create a dictionary with state:capital key value pairs.  You can start with only a few state:capital pairs while you test your program.
 Create a function that selects a random state from your dictionary.
-Create a function that prompts a user to input their guess for the random state’s capital and prints a response if the user’s guess is correct.
+Create a function that prompts a user to input their guess for the random state's capital and prints a response if the user's guess is correct.
 
 Optional: depending on the level of your students, you may want to show some or all of them this example, or you may choose to have them start pair programming without it. The example below quizzes the user on state populations (an unlikely quiz topic).  Use the structure as a template to get started on your state capitals quiz.
 
-```PYTHON
+```python
 import random
 states_dict = {
 "Alaska" : 665384,
@@ -334,7 +334,7 @@ Programming is easier to read and revise when you maintain separation of concern
 * Use if/else statements to print a different response for correct and incorrect guesses.
 * Use a for loop to call the new_question() function more than once, so the user can play multiple rounds.
 * Use the del keyword to remove states from the dictionary that have been guessed correctly.
-* Initialize a score variable that tracks correct guesses.  Report the user’s score after the final round of the game.
+* Initialize a score variable that tracks correct guesses.  Report the user's score after the final round of the game.
 * By default, string comparisons are case sensitive.  Use the .lower() method to adjust for this.
 * Add a hint system that provides the first letter of the state capital when users input "hint".
 

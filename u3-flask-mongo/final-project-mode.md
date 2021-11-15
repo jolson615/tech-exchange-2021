@@ -11,7 +11,7 @@ Also refer to the Flask Project Guide for additional details and expectations: h
 
 ## Teaching Tips
 
-Use the launch of project mode as an opportunity to get students excited about bringing together everything they've learned so far. Remind students that they should start small, defining an MVP and building things that work every step of the way instead of producing a hairball of code that doesn’t work but is too complicated to debug.
+Use the launch of project mode as an opportunity to get students excited about bringing together everything they've learned so far. Remind students that they should start small, defining an MVP and building things that work every step of the way instead of producing a hairball of code that doesn't work but is too complicated to debug.
 
 Once students have laid out their plan for their MVP, they'll know where they want additional guidance before coding. One option is to have small-group sessions where you re-teach content from Flask and MongoDB. Perhaps one group is implementing user logins but they were confused in the Advanced Mongo lesson. They may choose to attend a re-teach session while other groups are working on their projects. If another group is not sure how to use the CSS grid, they may want a special re-teach session on that, which not all students will attend.
 

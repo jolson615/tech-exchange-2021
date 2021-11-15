@@ -14,7 +14,9 @@ Students should be familiar with the basics of python, and have been introduced 
 
 ### Teaching Tip
 
-When teaching about classes, it is tempting to delve into the weeds about _object_, _self_, _init_, and other key components. However, this can be confusing for beginners. Instead, focus on walking students through the examples and helping them correctly employ the necessary syntax.
+When teaching about classes, it is tempting to delve into the weeds about _object_, _self_, _init_, and other key components. Inheritance also feels crucial to many veteran programmers. However, these more abstract concepts are usually a really confusing entry point for beginners. 
+
+Instead, focus on walking students through the examples here, which focus narrowly on instances, attributes, and instance methods, and helping them correctly employ the necessary syntax.
 
 ### Lab
 
@@ -251,7 +253,7 @@ print (bridgerton.network)
 print (tiger_king.network)
 ```
 
-### STRETCH: Dunders
+### STRETCH: Dunders & Private Variables
 
 This topic is not essential content, but it can be a great stretch topic for advanced students.
 
@@ -284,7 +286,7 @@ squid_game = Netflix("Squid Game", "thriller", 9)
 print(squid_game.__easter)
 ```
 
-Running this code produces an error saying "'Netflix' object has no attribute '__easter'". In other words, we cannot read this dunder variable like we can a normal variable.
+Running this code produces an error saying "'Netflix' object has no attribute '__easter'". In other words, we cannot read this private variable like we can a normal variable.
 
 In order to read the secret message, we need a getter method, and to update it, we need a setter method:
 
