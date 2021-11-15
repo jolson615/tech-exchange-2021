@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Book Recommendations</title>
+    </head>
+    <body>
+
+      <div class="nav-bar">
+        <a href="/">all books</a>
+      {% for genre in genres%}
+          <a href='/genre/{{ genre }}'>{{ genre }}</a>
+      {% endfor %}
+      </div>
+
+      <h1>{{ label }} Recommendations</h1>
+      <div class="book-list">
+        <ul>
+          {% for book in books %}
+            <li><a href='/book/{{ book._id }}'>{{ book.title }}</a> by {{ book.author }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+
+      <h2><a href='/new'>Recommend a Book</a></h2>
+
+      {% if session %}
+        <p>Logged in as {{ session['username'] }}</p>
+        <a href='/mybooks'>My Books</a>
+        <a href='/logout'>Log Out</a>
+      {% else %}
+        <a href='/login'>Log In</a>
+        <a href='/signup'>Sign Up</a>
+      {% endif %}
+
+    </body>
+</html>
