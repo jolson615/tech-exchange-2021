@@ -1,0 +1,38 @@
+body{
+    background-image: url('../images/bookbg.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    color: #ffffff;
+    background-size: cover;
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .logo{
+    font-family: 'Cabin Sketch', cursive;
+  }
+  
+  #maintxt{
+    margin-bottom: 50px;
+  }
+
+  a {
+      color: whitesmoke;
+      text-decoration: none;
+      padding: 5px;
+      margin: 5px;
+      border-style: solid;
+      border-width: 1px;
+      border-color: whitesmoke;
+      border-radius: 5px;
+  }
+
+  li {
+    padding: 5px;
+    margin: 5px;
+  }
+ 
