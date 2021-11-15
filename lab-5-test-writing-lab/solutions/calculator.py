@@ -119,7 +119,7 @@ sn to convert a number to scientific notation
 # Function 11
 def calculate():
     operation = get_operation()
-    if operation in ['+', '-', '*', '/', 'tip', 'taxi']:
+    if operation in ['+', '-', '*', '/']:
         numbers = get_numbers()
 
     if operation == '+':
@@ -135,10 +135,14 @@ def calculate():
         return divide(numbers[0], numbers[1])
     
     elif operation == 'tip':
-        return tip(numbers[0], numbers[1])
+        x = float(input('Enter your original bill amount: '))
+        y = float(input('Enter the percentage you would like to tip as just a number from 1-100: '))
+        return tip(x, y)
     
     elif operation == 'taxi':
-        return taxi(numbers[0], numbers[1])
+        x = float(input('Enter the distance you are planning to travel in miles: '))
+        y = float(input('Enter your estimate of the amount of minutes spent standing: '))
+        return taxi(x, y)
     
     elif operation == 'scrabble':
         word = input('Which word would you like to calculate the Scrabble value for? ')
@@ -153,4 +157,9 @@ def calculate():
     
 
 # Uncomment the function call below in order to use your calculator!
-print(calculate())
+# run_again = True
+# while run_again == True:
+#     print(calculate())
+#     run_again_yn = input('Would you like to perform another calculation? ')
+#     if run_again_yn.lower() == "no" or run_again_yn.lower() == "n":
+#         run_again = False

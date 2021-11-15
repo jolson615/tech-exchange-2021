@@ -88,12 +88,14 @@ class TestCalc(unittest.TestCase):
         self.assertRaises(TypeError, calculator.scientific_notation, True)
         self.assertRaises(TypeError, calculator.scientific_notation, [1, 2, 3])
     
-    # @mock.patch('calculator.input', create=True)
-    # def test_get_numbers(self, mocked_input):
-    #     mocked_input.side_effect = ['17', '42.81', 'cat', '17', 'False']
-    #     self.assertEqual(calculator.get_numbers(), [17, 42.81])
-    #     self.assertRaises(ValueError, calculator.get_numbers())
-    #     self.assertRaises(ValueError, calculator.get_numbers())
+    @mock.patch('calculator.input', create=True)
+    def test_get_numbers(self, mocked_input):
+        mocked_input.side_effect = ['17', '42.81', 'cat', '17', 'False']
+        self.assertEqual(calculator.get_numbers(), [17, 42.81])
+        with self.assertRaises(ValueError):
+            calculator.get_numbers()
+        with self.assertRaises(ValueError):
+            calculator.get_numbers()
     
     @mock.patch('calculator.input', create=True)
     def test_get_operation(self, mocked_input):
