@@ -14,7 +14,7 @@ app = Flask(__name__)
 app.config['MONGO_DBNAME'] = 'database'
 
 # URI of database
-app.config['MONGO_URI'] = '<your-connection-string>'
+app.config['MONGO_URI'] = "mongodb+srv://feedbackLoop:TestUserPassword1!@cluster0.0nsou.mongodb.net/database?retryWrites=true&w=majority"
 
 #Initialize PyMongo
 mongo = PyMongo(app)
@@ -35,3 +35,4 @@ def index():
 @app.route('/new')
 def new_book():
     return render_template('new_book.html', genres = genres)
+
