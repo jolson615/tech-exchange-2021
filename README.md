@@ -6,9 +6,9 @@ Here's the sequence:
 
 ## Unit 1: HTML + GitHub
 
-Approximate Duration: 3 weeks
-2021 Dates: Jan 19 - Feb 11 
-Total Lessons: 7
+> Approximate Duration: 3 weeks
+> 2021 Dates: Jan 19 - Feb 11 
+> Total Lesson Dates: 7
 
 * Lesson: [Intro to HTML](u1-html-git/intro-to-html.md)
     * Lab: [HTML Shorthand Art Installation](u1-html-git/lab-1-html-shorthand)
@@ -22,9 +22,9 @@ Total Lessons: 7
 
 ## Unit 2: Python Review + Unit Testing
 
-Approximate Duration: 3 weeks
-2021 Dates: Feb 14 - March 4, missing one day from each section (Feb 21 and 22) for President's Day 
-Total Lessons: 5
+> Approximate Duration: 3 weeks
+> 2021 Dates: Feb 14 - March 4, missing one day from each section (Feb 21 and 22) for President's Day 
+> Total Lesson Dates: 5
 
 * Lesson: [Python Essentials: Data Types, Control Flow, Lists, Dictionaries, and Functions](u2-python-unit-testing/python-essentials.md)
     * Lab: [Currency Converter](u2-python-unit-testing/lab-3-test-driven-python-functions)
@@ -40,9 +40,9 @@ Note that Spring Break comes after this unit, on March 7 - 11
 
 ## Unit 3: Flask and MongoDB
 
-Approximate Duration: 4 weeks
-2021 Dates: Mar 14 - Apr 8 
-Total Lessons: 8
+> Approximate Duration: 4 weeks
+> 2021 Dates: Mar 14 - Apr 8 
+> Total Lesson Dates: 8
 
 * Lesson: [Intro to Flask](u3-flask-mongo/intro-to-flask.md)
     * Template: [Flask Template](u3-flask-mongo/flask-template)
@@ -59,9 +59,9 @@ Total Lessons: 8
 
 ## Unit 4: Project Mode
 
-Approximate Duration: 3 weeks
-2021 Dates: Apr 11 - Apr 28
-Total Lessons: 8
+> Approximate Duration: 3 weeks
+> 2021 Dates: Apr 11 - Apr 28
+> Total Lesson Dates: 8
 
 * Project Guide: [Final Project Mode](u3-flask-mongo/final-project-mode.md)
 
