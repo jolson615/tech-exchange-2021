@@ -72,7 +72,12 @@ Working collaboratively on a coding project is the same. When working in a team,
 ### Working Collaboratively with Github 
 Start the lesson by sharing the link to the starter Github repository. Students should clone the repository into their workspaces. 
 
-Guide the students through creating a new branch and explain the importance of working on their individual branch to develop their own features. Name their branch as their name for easy identification.
+Guide the students through creating a new branch using, the git checkout command, and explain the importance of working on their individual branch to develop their own features. Name their branch as their name for easy identification. 
+
+The git command should look similar to: 
+````
+git checkout -b myFirstName-LastName
+````
 
 #### Helpful Questions
 * What issues do you think would arise if everyone started editing the existing files?
@@ -81,9 +86,13 @@ Guide the students through creating a new branch and explain the importance of w
 Give the students 5-10 minutes to make at least one change to the menu. They do not have to edit everything. Instructors should make sure that there is at least two students who have made changes to the same part of the code to trigger a merge conflict later. Once students have added their changes, have them push their code. 
 
 ### Dealing with Merge Conflicts
-Walk through the Github repository on the browser and show how the branches and notifications for the branches appear on the webpage. Now that the branches have been pushed to the repository, they are visible to all collaborators. However, if we click the main branch's HTML file, no changes are displayed there. 
+Walk through the Github repository on the browser and show how the branches and notifications for the branches appear on the webpage. Click on the dropdown list of all of the branches and identify a few students' branches that are visible. 
 
-In order to merge the students' changes and have the changes reflected on the main branch, we will have to do several pull requests. Guide the students through creating a pull request. As the pull requests come in, point out the merge conflicts that occurred as you resolve them. Make sure that the students understand why the conflicts were created and how to identify and resolve them. 
+Now that the branches have been pushed to the repository, they are visible to all collaborators. However, if we click the main branch's HTML file, no changes are displayed there. 
+
+In order to merge the students' changes and have the changes reflected on the main branch, we will have to do several pull requests. Guide the students through creating a pull request. Optionally, you can have one of the students demo from their point of view as you verbally guide them through each of the steps. Students should see a button to 'Compare & pull request' at the top of their repository on the browser. Once they click it, they should be able to identify the branch they are attempting to create a pull request on and the branch they are trying to add it to. Add a comment and create the pull request!
+
+As the pull requests come in, point out the merge conflicts that occurred as you resolve them. Make sure that the students understand why the conflicts were created and how to identify and resolve them. 
 
 ## Extensions
 
