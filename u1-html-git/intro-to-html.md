@@ -247,7 +247,7 @@ Open up the `style.css` file, which should be blank, and walk students through w
 
 Let's start be getting our page title centered. 
 
-```CSS
+```css
 h1 {
     text-align: center;
 }
@@ -257,7 +257,7 @@ Refresh the HTML page preview and show students how this rule has impacted our p
 
 Then, explain that we can give a blue background to our "About" section to help separate it from the rest. It's a `div`, but we can't just select divs the same way we did our h1 - there are tons of divs on our page. 
 
-```CSS
+```css
 div#about {
     background-color: azure;
 }
@@ -267,7 +267,7 @@ Explain that `#` is shorthand for `id`, so this selector can be read as "the div
 
 Let's revise that out and add in another ruleset for our other div - the menu:
 
-```CSS
+```css
 #about {
     background-color: azure;
 }
@@ -281,7 +281,7 @@ By now students are wondering whether you're making up colors - share the [CSS c
 
 Let's also write something for our foods - instead of a `#`, we'll use a `.` to indicate that we're looking for a class this time. 
 
-```CSS
+```css
 .food {
     background-color: cadetblue;
 }
@@ -290,7 +290,7 @@ Let's also write something for our foods - instead of a `#`, we'll use a `.` to 
 Last but not least, let's add some breathing room. We use `padding` to space the contents of an element away from it's own edge, and `margin` to space the whole element away from its neighbors. 
 
 
-```CSS
+```css
 #about {
     background-color: azure;
     padding: 30px;
