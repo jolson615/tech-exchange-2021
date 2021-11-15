@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+   <html>
+    <head>
+        <title>Add Image</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/style.css') }}">
+    </head>
+    <body>
+        <h1>Upload and Image for {{ book.title }}</h1>
+        <form method="post" action="/book/{{ book._id }}/add_image">
+            <label for="url">Image Address URL:</label>
+            <input type="text" name="url" value="">
+          <input type="submit" value="Submit">
+        </form>
+        <p><a href="/book/{{ book._id }}">Cancel</a></p>
+    </body>
+</html>
