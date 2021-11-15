@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/style.css') }}">
+    <title>Book</title>
+</head>
+<body>
+    <h2>{{ book.title }}</h2>
+    <p>By {{ book.author }}</p>
+    <p>First published in {{ book.publication }}</p>
+    <p>Genre: {{ book.genre }}</p>
+
+    {% if book.image %}
+        <img src='{{ book.image }}'/>
+    {% else %}
+        <p><a href="/book/{{ book._id }}/add_image">Add An Image</a></p>
+    {% endif %}
+
+    {% if session %}
+        <p>Logged in as {{ session['username'] }}</p>
+        <a href='/book/{{ book._id }}/delete'>Delete Recommendation</a>
+    {% endif %}
+    
+    <p><a href="/">Home</a></p>
+</body>
+</html>
