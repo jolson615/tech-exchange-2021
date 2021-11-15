@@ -45,12 +45,15 @@ Approximate Duration: 4 weeks
 Total Lessons: 8
 
 * Lesson: [Intro to Flask](u3-flask-mongo/intro-to-flask.md)
-    * Lab: [State Capitals]()
-* Lesson: [Advanced Flask]()
-* Lesson: [Intro to MongoDB]()
-    * Lab: [PLDB (Programming Languages Database)]()
-* Lesson: [MongoDB + Flask Basics]()
-* Lesson: [Advanced MongoDB + Flask: Auth]()
+    * Template: [Flask Template](u3-flask-mongo/flask-template)
+    * Lab: [State Capitals](u3-flask-mongo/flask-lab.md)
+* Lesson: [Advanced Flask](u3-flask-mongo/advanced-flask.md)
+* Lesson: [Intro to MongoDB](u3-flask-mongo/intro-to-mongodb.md)
+    * Lab: [PLDB (Programming Languages Database)](u3-flask-mongo/lab-7-mongodb-queries)
+* Lesson: [MongoDB + Flask Basics](u3-flask-mongo/mongo-db-flask-basics/mongo-db-flask-basics.md)
+    * Template: [Flask Template with MongoDB](u3-flask-mongo/mongo-db-flask-basics/flask-mongo-template)
+* Lesson: [Advanced MongoDB + Flask: Auth](u3-flask-mongo/advanced-mongodb-flask/advanced-mongob-flask.md)
+    * Template: [Flask Template for Advanced MongoDB](u3-flask-mongo/advanced-mongodb-flask/flask-mongo-template)
 * Unit Project: [Full-stack Business Web App]()
 * Unit Project Exemplar: [Book Store App]()
 
@@ -60,5 +63,5 @@ Approximate Duration: 3 weeks
 2021 Dates: Apr 11 - Apr 28
 Total Lessons: 8
 
-* Project Guide: [Final Project Mode]()
+* Project Guide: [Final Project Mode](u3-flask-mongo/final-project-mode.md)
 
