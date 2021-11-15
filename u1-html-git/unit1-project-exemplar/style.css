@@ -1,0 +1,17 @@
+body{
+  background-image: url("./images/bookbg.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  color: #ffffff;
+  background-size: cover;
+  font-family: font-family: 'Zen Kaku Gothic Antique', sans-serif;
+}
+
+.logo{
+  font-family: 'Cabin Sketch', cursive;
+}
+
+#maintxt{
+  margin-bottom: 50px;
+}
