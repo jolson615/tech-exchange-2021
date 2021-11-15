@@ -49,12 +49,15 @@ Open calculator.py and test_calculator.py. You will need to write unit tests in 
 ### Function 6: Scrabble Word Value
 * The scrabble_value function should take in a word as a string and return the value of that word in scrabble tiles (tile values are given in the letter_value dictionary in scrabble.py). Write unit tests to check the accuracy of the scrabble_value function
 * Write unit tests to check that a type error is raised when an input is not a string
-* Write unit tests to check that a valxue error is raised when the word length is impossible
+* Write unit tests to check that a value error is raised when the word length is impossible
+* Write unit tests to check that a value error is raised when the input is multiple words
+* Write unit tests to check that a value error is raised when the input contains non-letter characters
 * Edit the scrabble_value function in order to pass all tests
 
 ### Function 7: Taxi Cost Estimator
-* The taxi function should take in a distance (in miles) and and a time spent stopped (in minutes) and return the cost of taking a taxi. Taxis cost $2.50 plus 50 cents per 0.2-mile plus 50 cents for each minute of standing. The pre-written function is giving some strange results. Write unit tests to check the accuracy of the taxi function
+* The taxi function should take in a distance (in miles) and and a time spent stopped (in minutes) and return the cost of taking a taxi. Taxis cost $2.50 plus 50 cents per 0.2-mile (rounded up, so 5.1 miles counts as 5.2 miles) plus 50 cents for each minute of standing (rounded up). The pre-written function is giving some strange results. Write unit tests to check the accuracy of the taxi function
 * Write unit tests to check that a type error is raised when the input types are incorrect
+* Write unit tests to check that a value error is raised when the inputs are impossible
 * Edit the taxi function in order to pass all tests
 
 ### Function 8: Scientific Notation Converter
@@ -62,17 +65,17 @@ Open calculator.py and test_calculator.py. You will need to write unit tests in 
 * Write unit tests to check that a type error is raised when the input type is incorrect
 * Edit the scientific_notation function in order to pass all tests
 
-### Function 9: Getting Numbers from the User
-* The get_numbers function should ask the user to input two different numbers and return those numbers as a list of numbers, which can be input into one of the previously-defined functions. Right now it's not working properly with the other functions. Write unit tests to check the accuracy of the get_numbers function
-* Write unit tests to check that a type error is raised when the input type is incorrect
+### STRETCH Function 9: Getting Numbers from the User
+* The get_numbers function should ask the user to input two different numbers and return those numbers as a list of numbers, which can be input into one of the previously-defined functions. Right now it's not working properly with the otehr functions. Write unit tests to check the accuracy of the get_numbers function (HINT: you will need to look up mocking in order to test functions that take user input)
+* Write unit tests to check that an error is raised when the input type is incorrect
 * Edit the get_numbers function in order to pass all tests
 
-### Function 10: Getting Numbers from the User
-* The get_numbers function should ask the user to input two different numbers and return those numbers as a list of numbers, which can be input into one of the previously-defined functions. Right now it's not working properly with the other functions. Write unit tests to check the accuracy of the get_numbers function
-* Write unit tests to check that a type error is raised when the input type is incorrect
-* Edit the get_numbers function in order to pass all tests
+### STRETCH Function 10: Getting the Operation from the User
+* The get_operation function should ask the user to input a symbol representing one of the previously-defined functions. Write unit tests to check the accuracy of the get_operation function
+* Write unit tests to check that an error is raised when the input is not one of the given values
+* Edit the get_operation function in order to pass all tests
 
-### Check your calculator!
+### STRETCH Use your calculator!
 * Uncomment the function call at the end of calculator.py and run "python calculator.py" to see your calculator in action!
 * The calculator works, but using the tip and taxi functions is confusing. Edit your calculate() function to improve the user experience.
 * Edit the code so that after a calculation, the calculator asks the user if they would like to perform another calculation

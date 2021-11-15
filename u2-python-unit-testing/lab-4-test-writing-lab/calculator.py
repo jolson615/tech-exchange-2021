@@ -36,7 +36,7 @@ def scrabble_value(word):
 
 # Function 7
 def taxi(distance, stopped_time):
-    '''Function that takes in the distance in miles and amount of time spent stopped in minutes and returns the cost of taking a taxi. Taxis cost $2.50 plus 50 cents per 0.2-mile plus 50 cents for each minute of standing'''
+    '''Function that takes in the distance in miles and amount of time spent stopped in minutes and returns the cost of taking a taxi. Taxis cost $2.50 plus 50 cents per 0.2-mile (rounded up) plus 50 cents for each minute of standing (rounded up)'''
     base_fee = 2.5
     total = base_fee + distance * 0.5 + stopped_time * 0.5
     return total
@@ -103,7 +103,7 @@ def calculate():
         return scrabble_value(word)
     
     elif operation == 'sn':
-        num = input('What number would you like to convert to scientific notation? ')
+        num = float(input('What number would you like to convert to scientific notation? '))
         return scientific_notation(num)
 
     else:
