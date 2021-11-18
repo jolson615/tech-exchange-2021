@@ -14,11 +14,15 @@ Here's the sequence:
     * Lab: [HTML Shorthand Art Installation](u1-html-git/lab-1-html-shorthand)
 * Mini-Project: [Ice Breaker mini-project](u1-html-git/ice-breaker-mini-project)
 * Lesson: [CSS, Design, and Design Libraries](u1-html-git/css-design-and-design-libraries/css-design-and-design-libraries.md) 
-* Lesson: [Intro to Command Line, Cloud Shell, and Git Basics](u1-html-git/intro-to-command-line-cloud-shell-and-git-clone-add-commit-push.md)
+* Lesson: [Intro to Command Line, Cloud Shell, and Git Basics](u1-html-git/intro-to-command-line-cloud-shell-and-git-clone-add-commit-push.md) 
+    * Recommend launching projects at the start or end of this lesson. 
 * Lesson: [Intro to Git Branches: Pull Requests and Merge Conflicts](u1-html-git/intro-to-github-branches-pull-requests-and-merge-conflicts.md)
     * Lab: [Git Branch Scavenger Hunt](u1-html-git/lab-git-branch-scavenger-hunt)
-* Unit Project: [Create a Business](u1-html-git/html-project-guide.md)
+
+#### Unit Project
+* Unit Project Guide: [Create a Business](u1-html-git/html-project-guide.md)
 * Unit Project Exemplar: [The Bookery](u1-html-git/unit1-project-exemplar)
+* Unit Project Exemplar Deployed Preview: [Deployed Bookery](https://upperlinecode.github.io/the-bookery/)
 
 ## Unit 2: Python Review + Unit Testing
 
@@ -30,13 +34,17 @@ Here's the sequence:
     * Lab: [Currency Converter](u2-python-unit-testing/lab-3-test-driven-python-functions)
 * Lesson: [Raising Errors, Unit Testing, and Separation of Concerns](u2-python-unit-testing/raising-errors.md)
     * Lab: [Python Calculator Testing](u2-python-unit-testing/lab-4-test-writing-lab)
+    * Recommend launching projects at the start or end of this lesson
 * Lesson: [Object-Orientation Basics: Instances, Attributes, and Instance Methods](u2-python-unit-testing/object-orientation-instances-attributes-and-instance-methods.md)
     * Lab: [Pet Rescue Rescue](u2-python-unit-testing/lab-5-test-driven-instance-instance-methods-lab)
 * Lesson: [Unit Testing for Object-Oriented Python](u2-python-unit-testing/unit-testing-for-oop-in-python.md)
-* Unit Project: [Build a Back-End](u2-python-unit-testing/tdd-python-projects.md)
-* Unit Project Exemplar: [Text-based RPG](u2-python-unit-testing/tdd-python-project-exemplar)
 
-Note that Spring Break comes after this unit, on March 7 - 11
+#### Unit Project
+* Unit Project Guide: [Build a Back-End](u2-python-unit-testing/tdd-python-projects.md)
+* Unit Project Exemplar: [Text-based RPG](u2-python-unit-testing/tdd-python-project-exemplar)
+* Unit Project Exemplar Deployed Preview: [Deployed Text-based RPG]()
+
+Note that Spring Break comes between units 2 and 3, on March 7 - 11
 
 ## Unit 3: Flask and MongoDB
 
@@ -50,12 +58,16 @@ Note that Spring Break comes after this unit, on March 7 - 11
 * Lesson: [Advanced Flask](u3-flask-mongo/advanced-flask.md)
 * Lesson: [Intro to MongoDB](u3-flask-mongo/intro-to-mongodb.md)
     * Lab: [PLDB (Programming Languages Database)](u3-flask-mongo/lab-7-mongodb-queries)
+    * Recommend launching projects at the start or end of this lesson
 * Lesson: [MongoDB + Flask Basics](u3-flask-mongo/mongo-db-flask-basics/mongo-db-flask-basics.md)
     * Template: [Flask Template with MongoDB](u3-flask-mongo/mongo-db-flask-basics/flask-mongo-template)
 * Lesson: [Advanced MongoDB + Flask: Auth](u3-flask-mongo/advanced-mongodb-flask/advanced-mongob-flask.md)
     * Template: [Flask Template for Advanced MongoDB](u3-flask-mongo/advanced-mongodb-flask/flask-mongo-template)
-* Unit Project: [Full-stack Business Web App](u3-flask-mongo/flask-project-guide.md)
+
+#### Unit Project
+* Unit Project Guide: [Full-stack Business Web App](u3-flask-mongo/flask-project-guide.md)
 * Unit Project Exemplar: [Book Store App](u3-flask-mongo/flask-mongodb-project-exemplar)
+* Unit Project Exemplar Deployed Preview: [Deployed Book Store App]()
 
 ## Unit 4: Project Mode
 
@@ -63,7 +75,7 @@ Note that Spring Break comes after this unit, on March 7 - 11
 > 2022 Dates: Apr 11 - Apr 28 <br/>
 > Total Lesson Dates: 8
 
-* Project Guide: [Final Project Mode](u3-flask-mongo/final-project-mode.md)
+* Project Guide: [Final Project Mode](u4-project-mode/final-project-mode.md)
 
 # Pacing Recommendations
 
