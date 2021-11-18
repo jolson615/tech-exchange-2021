@@ -42,7 +42,7 @@ Here's the sequence:
 #### Unit Project
 * Unit Project Guide: [Build a Back-End](u2-python-unit-testing/tdd-python-projects.md)
 * Unit Project Exemplar: [Text-based RPG](u2-python-unit-testing/tdd-python-project-exemplar)
-* Unit Project Exemplar Deployed Preview: [Deployed Text-based RPG]()
+* Unit Project Exemplar Deployed Preview: [Deployed Text-based RPG](https://replit.com/@jolson615/Sample-CLI-text-based-rpg)
 
 Note that Spring Break comes between units 2 and 3, on March 7 - 11
 
@@ -67,7 +67,7 @@ Note that Spring Break comes between units 2 and 3, on March 7 - 11
 #### Unit Project
 * Unit Project Guide: [Full-stack Business Web App](u3-flask-mongo/flask-project-guide.md)
 * Unit Project Exemplar: [Book Store App](u3-flask-mongo/flask-mongodb-project-exemplar)
-* Unit Project Exemplar Deployed Preview: [Deployed Book Store App]()
+* Unit Project Exemplar Deployed Preview: [Deployed Book Store App](#coming-soon) [Coming Soon!]
 
 ## Unit 4: Project Mode
 
@@ -91,4 +91,4 @@ As you read over these lesson materials, please bear in mind that the following 
 All of these pacing guidelines can really be summed up in a few basic teaching principles:
 1. **Teach Less.** Students learn more by doing than by listening, so when in doubt, narrow lessons to their essential pieces. Make sure they have what is absolutely necessary to start work, and make more time for independent practice.
 3. **Slow Down.** In general, it's always better for students to get deeper practice with one essential concept than to get weak practice with several concepts. If some students need to move slowly while others keep moving at a brisk pace, try providing independent resources to the students who are moving quickly, and then provide more focused support for the beginners who need to move more slowly. You really want moving slowly and mastering concepts to be the default in your class.
-2. **Speed Up.** Anytime something is mentioned here that you can concretely demonstrate that all your students know, feel free to abridge it significantly. One important caveat: just because your 5 most eager-to-participate students know something well doesn't mean that everyone does. It's important to make the call about when to speed up based on the students at tail end of the bell curve, and not based on your top perfomers. 
+2. **Speed Up.** Anytime something is mentioned here that you can concretely demonstrate that all your students know, feel free to abridge it significantly. One important caveat: just because your 5 most eager-to-participate students know something well doesn't mean that everyone does. It's important to make the call about when to speed up based on the students at tail end of the bell curve, and not based on your top performers. 
