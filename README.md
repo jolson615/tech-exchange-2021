@@ -2,6 +2,8 @@
 
 This repo contains all the documents for review by the Tech Exchange team. As you review, please keep in mind the [pacing recommendations](#pacing-recommendations) listed at the bottom of this document. 
 
+Note that ✨ = Optional, meaning that a lesson can be skipped without drastically impacting final projects.
+
 Here's the sequence:
 
 ## Unit 1: HTML + GitHub
@@ -35,9 +37,9 @@ Here's the sequence:
 * Lesson: [Raising Errors, Unit Testing, and Separation of Concerns](u2-python-unit-testing/raising-errors.md)
     * Lab: [Python Calculator Testing](u2-python-unit-testing/lab-4-test-writing-lab)
     * Recommend launching projects at the start or end of this lesson
-* Lesson: [Object-Orientation Basics: Instances, Attributes, and Instance Methods](u2-python-unit-testing/object-orientation-instances-attributes-and-instance-methods.md)
-    * Lab: [Pet Rescue Rescue](u2-python-unit-testing/lab-5-test-driven-instance-instance-methods-lab)
-* Lesson: [Unit Testing for Object-Oriented Python](u2-python-unit-testing/unit-testing-for-oop-in-python.md)
+* Lesson: [Object-Orientation Basics: Instances, Attributes, and Instance Methods](u2-python-unit-testing/object-orientation-instances-attributes-and-instance-methods.md) ✨
+    * Lab: [Pet Rescue Rescue](u2-python-unit-testing/lab-5-test-driven-instance-instance-methods-lab) ✨
+* Lesson: [Unit Testing for Object-Oriented Python](u2-python-unit-testing/unit-testing-for-oop-in-python.md) ✨
 
 #### Unit Project
 * Unit Project Guide: [Build a Back-End](u2-python-unit-testing/tdd-python-projects.md)
@@ -61,13 +63,13 @@ Note that Spring Break comes between units 2 and 3, on March 7 - 11
     * Recommend launching projects at the start or end of this lesson
 * Lesson: [MongoDB + Flask Basics](u3-flask-mongo/mongo-db-flask-basics/mongo-db-flask-basics.md)
     * Template: [Flask Template with MongoDB](u3-flask-mongo/mongo-db-flask-basics/flask-mongo-template)
-* Lesson: [Advanced MongoDB + Flask: Auth](u3-flask-mongo/advanced-mongodb-flask/advanced-mongob-flask.md)
-    * Template: [Flask Template for Advanced MongoDB](u3-flask-mongo/advanced-mongodb-flask/flask-mongo-template)
+* Lesson: [Advanced MongoDB + Flask: Auth](u3-flask-mongo/advanced-mongodb-flask/advanced-mongob-flask.md) ✨
+    * Template: [Flask Template for Advanced MongoDB](u3-flask-mongo/advanced-mongodb-flask/flask-mongo-template) 
 
-#### Unit Project
-* Unit Project Guide: [Full-stack Business Web App](u3-flask-mongo/flask-project-guide.md)
-* Unit Project Exemplar: [Book Store App](u3-flask-mongo/flask-mongodb-project-exemplar)
-* Unit Project Exemplar Deployed Preview: [Deployed Book Store App](#coming-soon) [Coming Soon!]
+#### Unit Project ✨
+* Unit Project Guide: [Full-stack Business Web App](u3-flask-mongo/flask-project-guide.md) ✨
+* Unit Project Exemplar: [Book Store App](u3-flask-mongo/flask-mongodb-project-exemplar) ✨
+* Unit Project Exemplar Deployed Preview: [Deployed Book Store App](https://techexchange-book-store.herokuapp.com/) ✨
 
 ## Unit 4: Project Mode
 
