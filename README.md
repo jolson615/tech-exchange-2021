@@ -43,8 +43,10 @@ Here's the sequence:
 
 #### Unit Project
 * Unit Project Guide: [Build a Back-End](u2-python-unit-testing/tdd-python-projects.md)
-* Unit Project Exemplar: [Text-based RPG](u2-python-unit-testing/tdd-python-project-exemplar)
-* Unit Project Exemplar Deployed Preview: [Deployed Text-based RPG](https://replit.com/@jolson615/Sample-CLI-text-based-rpg)
+* Unit Project Exemplar 1: [Bookshelf](u2-python-unit-testing/tdd-python-project-exemplar-bookshelf)
+* Unit Project Exemplar Deployed Preview 1: [Deployed Bookshelf](https://replit.com/@jolson615/tdd-python-exemplar-bookshelf#main.py)
+* Unit Project Exemplar 2: [Text-based RPG](u2-python-unit-testing/tdd-python-project-exemplar-rpg)
+* Unit Project Exemplar Deployed Preview 2: [Deployed Text-based RPG](https://replit.com/@jolson615/Sample-CLI-text-based-rpg)
 
 Note that Spring Break comes between units 2 and 3, on March 7 - 11
 
