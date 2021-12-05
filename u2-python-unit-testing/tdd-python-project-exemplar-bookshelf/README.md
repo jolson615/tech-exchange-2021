@@ -2,6 +2,7 @@
 Bookshelf allows users to organize their favorite books in a digital bookshelf.  These models could be used to organize a database of users, each with their own book collections.
 
 ## Class Model
+![image](https://user-images.githubusercontent.com/37776449/144758710-1ab1090e-6f3d-4c07-97c5-d9a130f721be.png)
 
 ## Using Bookshelf CLI
 To begin use the command line interface, fork and clone this repo and run ```python3 book_cli.py``` in your terminal.
