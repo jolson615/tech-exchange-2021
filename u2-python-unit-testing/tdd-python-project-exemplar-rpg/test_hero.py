@@ -1,7 +1,7 @@
 import unittest
 from hero import Hero
 
-#python -m unittest test_items
+#python3 -m unittest test_hero
 class TestHero(unittest.TestCase):
     def test_argument_values(self):
         self.assertRaises(ValueError, Hero.check_death, self, -1)

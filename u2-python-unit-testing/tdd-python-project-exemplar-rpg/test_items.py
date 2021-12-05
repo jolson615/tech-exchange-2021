@@ -1,7 +1,7 @@
 import unittest
 from items import Item
 
-#python -m unittest test_items
+#python3 -m unittest test_items
 class TestItems(unittest.TestCase):
     def test_argument_values(self):
         self.assertRaises(ValueError, Item, "sword", "attack", -1)
