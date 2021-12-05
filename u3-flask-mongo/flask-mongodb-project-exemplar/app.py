@@ -1,5 +1,6 @@
 # ---- YOUR APP STARTS HERE ----
 # -- Import section --
+import os
 from flask import Flask
 from flask import render_template
 from flask import request, redirect, session, url_for
@@ -17,7 +18,9 @@ app = Flask(__name__)
 app.config['MONGO_DBNAME'] = 'database'
 
 # URI of database
-app.config['MONGO_URI'] = "mongodb+srv://feedbackLoop:TestUserPassword1!@cluster0.0nsou.mongodb.net/database?retryWrites=true&w=majority"
+# Accessed from CONFIG VARS
+secret_key = os.environ.get('MONGO_URI')
+app.config['MONGO_URI'] = secret_key
 
 #Initialize PyMongo
 mongo = PyMongo(app)
