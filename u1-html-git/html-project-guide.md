@@ -1,12 +1,20 @@
 # Unit 1 Project: Team Startup Page
 
-[Objectives](#objectives)
-[Teaching Tips](#teaching-tips)
-[What We’re Building](#building)
-[Requirements](#requirements)
-[Launch](#launch)
-[Recommended Benchmarks](#recommended-benchmarks)
-[Exemplar](#exemplar)
+### Student-facing Materials
+
+1. [Objectives](#objectives)
+2. [What We’re Building](#building)
+3. [Requirements](#requirements)
+4. [Exemplar](#exemplar)
+
+
+### Teacher-facing Materials
+
+5. [Teaching Tips](#teaching-tips)
+6. [Launch](#launch)
+7. [Recommended Benchmarks](#recommended-benchmarks)
+
+# Student-facing Materials
 
 ## Objectives
 
@@ -14,17 +22,8 @@
 * Plan the layout and visual design of your website before launching into building it
 * Divide up responsibilities & prioritize features of your project
 * Practice HTML at the edge of your learning zone, wherever that may be
+* Use GitHub for effective collaboration and version control
 * Learn and implement new CSS properties and combinations of properties
-
-## Teaching Tips
-
-This is students' first time working at length on anything together, so it is critically important to lower the stakes as much as possible. Emphasize that the point is not for students to flex their existing coding skills, but rather to meet the core requirements and make sure that everyone on their team feels comfortable with the HTML and CSS basics.
-
-It's also going to be important to suss out which groups are dysfunctional as early as possible. The two strongest levers to do so are:
-* Dropping by breakout rooms to examine the work that students are doing. 
-* Checking in with student groups who do not meet benchmark deadlines. 
-
-Avoid letting students allocate responsibilities such that one student in a group ends up with a completely nontechnical set of tasks. If, for example, a group tells you "Joseph is writing all the copy for the page in this Google Doc and then Alexandria's doing the HTML and I'm doing the CSS" that's a good sign that Joseph is experiencing some imposter syndrome and this group needs to be reminded to support him in learning HTML, not just cover for him so that he doesn't have to practice it. 
 
 ## What We’re Building <a id="building"></a>
 
@@ -42,6 +41,26 @@ Each group's project must demonstrate each of the following:
 * At least one stylesheet, with at least 10 different rulesets in it. 
 * At least three different branches, or evidence of at least one merge conflict which you have resolved. 
 * You must make something you're proud of!
+
+## Exemplar
+
+Before launching into your projects, you may want to take a moment to review the exemplar project. Reviewing an exemplar can help you make sure that the expectations you're placing on yourself are in line with the expectations of this course, so that you don't end up accidentally turning significantly more or less than is expected for this unit project. 
+
+* Unit Project Exemplar Code: [The Bookery](u1-html-git/unit1-project-exemplar)
+* Unit Project Exemplar Deployed Preview: [Deployed Bookery](https://upperlinecode.github.io/the-bookery/)
+
+# Teacher-facing Materials
+
+## Teaching Tips
+
+This is students' first time working at length on anything together, so it is critically important to lower the stakes as much as possible. Emphasize that the point is not for students to flex their existing coding skills, but rather to meet the core requirements and make sure that everyone on their team feels comfortable with the HTML and CSS basics.
+
+It's also going to be important to suss out which groups are dysfunctional as early as possible. The two strongest levers to do so are:
+* Dropping by breakout rooms to examine the work that students are doing. 
+* Checking in with student groups who do not meet benchmark deadlines. 
+
+Avoid letting students allocate responsibilities such that one student in a group ends up with a completely nontechnical set of tasks. If, for example, a group tells you "Joseph is writing all the copy for the page in this Google Doc and then Alexandria's doing the HTML and I'm doing the CSS" that's a good sign that Joseph is experiencing some imposter syndrome and this group needs to be reminded to support him in learning HTML, not just cover for him so that he doesn't have to practice it. 
+
 
 ## Launch
 
@@ -78,7 +97,3 @@ Then have students use these DORs as the starting point for a stand-up the next 
 Have students do a mini-presentation of the `index.html` page on their site. This serves dual purpose as an incremental deadline, and as a source of feedback on their project so far, before it's finished. This is less about giving and receiving explicit feedback from their peers, and more about sourcing inspiration from them. If one group sees that another group has used thoughtful color gradients in their backgrounds, they might be inspired to add some additional flair to their page. 
 
 For maximum impact, carve out time explicitly for students to ask each other groups about how they did whatever they did well. 
-
-## Exemplar
-
-NOTE TO KEVIN AND MO - this isn't made yet, per our earlier conversation - wanted to get your feedback on the project idea as a whole before launching into building an exemplar of it. 
