@@ -19,7 +19,7 @@ Here's the sequence:
 * Lesson: [Intro to Command Line, Cloud Shell, and Git Basics](u1-html-git/intro-to-command-line-cloud-shell-and-git-clone-add-commit-push.md) 
     * Recommend launching projects at the start or end of this lesson. 
 * Lesson: [Intro to Git Branches: Pull Requests and Merge Conflicts](u1-html-git/intro-to-github-branches-pull-requests-and-merge-conflicts.md)
-    * Lab: [Git Branch Scavenger Hunt](u1-html-git/lab-git-branch-scavenger-hunt)
+    * Lab: [Git Branch Scavenger Hunt](u1-html-git/lab-2-git-branch-scavenger-hunt)
 
 #### Unit Project
 * Unit Project Guide: [Create a Business](u1-html-git/html-project-guide.md)
